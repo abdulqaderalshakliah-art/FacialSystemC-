@@ -11,3 +11,15 @@ C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsForm
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StudentManagementForm.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\FacialSystem.csproj.AssemblyReference.cache
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminDashboardForm.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StudentManagementForm.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\FacialSystem.csproj.GenerateResource.cache
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\FacialSystem.csproj.CoreCompileInputs.cache
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
