@@ -12,7 +12,9 @@ namespace WindowsFormsApp1
 {
     public partial class AdminDashboardForm : Form
     {
+
         private Button selectedButton;
+
         public AdminDashboardForm()
         {
             InitializeComponent();
@@ -32,6 +34,7 @@ namespace WindowsFormsApp1
             selectedButton = clickedButton;
             selectedButton.BackColor = Color.FromArgb(28, 96, 165); // Hover color
 
+
             string tag = clickedButton.Tag.ToString();
 
             switch (tag)
@@ -43,6 +46,7 @@ namespace WindowsFormsApp1
                     ShowStudentManagement();
                     break;
                 case "instructors":
+
                     MessageBox.Show("Opening Course Management...");
                     break;
                 case "faculties":
@@ -65,6 +69,7 @@ namespace WindowsFormsApp1
 
         private void ShowDashboard()
         {
+
             contentpanel.Controls.Clear();
             Label label = new Label();
             label.Text = "Welcome to Admin Dashboard";
@@ -76,10 +81,12 @@ namespace WindowsFormsApp1
             label.BackColor = Color.Transparent;
 
             contentpanel.Controls.Add(label);
+
         }
 
         private void ShowStudentManagement()
         {
+
 
         }
 
@@ -93,6 +100,11 @@ namespace WindowsFormsApp1
             form.Show();
 
         }
+
+         
+        
+
+
         private void Card_Paint(object sender, PaintEventArgs e)
         {
             Panel card = (Panel)sender;
@@ -120,6 +132,8 @@ namespace WindowsFormsApp1
         private void AdminDashboardForm_Load(object sender, EventArgs e)
         {
 
+            // Set tags for menu buttons
+
             btnDashboard.Tag = "dashboard";
             btnStudents.Tag = "students";
             btnInstructors.Tag = "instructors";
@@ -130,6 +144,7 @@ namespace WindowsFormsApp1
             btnSettings.Tag = "settings";
 
 
+
             foreach (Button btn in sidebar.Controls.OfType<Button>())
             {
                 btn.BackColor = Color.FromArgb(52, 73, 94);
@@ -137,5 +152,7 @@ namespace WindowsFormsApp1
         }
 
        
+
+        }
+
     }
-}

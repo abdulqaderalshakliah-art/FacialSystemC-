@@ -15,11 +15,16 @@ namespace WindowsFormsApp1
     {
 
         private BindingSource bindingSource = new BindingSource();
+  
+
         public FacultyManagement()
         {
             InitializeComponent();
-         
+
         }
+
+     
+
         private void facultyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (var form = new AddFaculty())
@@ -47,8 +52,8 @@ namespace WindowsFormsApp1
 
                 bindingSource.DataSource = dt;
                 dataGridViewFaculties.DataSource = dt;
-                
-               
+
+
                 dataGridViewFaculties.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
 
@@ -77,10 +82,10 @@ namespace WindowsFormsApp1
                 form.ShowDialog();
             }
         }
-        
 
 
-       
+
+
         public void LoadMajors()
         {
             string sql = @"SELECT 
@@ -99,7 +104,7 @@ namespace WindowsFormsApp1
             }
             bindingSource.DataSource = dt;
             dataGridViewFaculties.DataSource = dt; // ← Uses your DataGridView
-         
+
             dataGridViewFaculties.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             // Reorder columns: ID → Faculty Name → Majors
             if (dataGridViewFaculties.Columns["department_id"] != null)
@@ -120,7 +125,7 @@ namespace WindowsFormsApp1
             }
         }
 
-      
+    
       
 
 

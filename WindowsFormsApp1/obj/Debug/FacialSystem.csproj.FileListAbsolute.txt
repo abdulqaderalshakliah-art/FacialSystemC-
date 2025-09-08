@@ -10,6 +10,10 @@ C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsForm
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminDashboardForm.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StudentManagementForm.resources
+<<<<<<< HEAD
+=======
+C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+>>>>>>> ee642ea70c93120a73b2bd8e88a4d7466d254628
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
@@ -23,7 +27,6 @@ C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\FacialSyst
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FacultyManagement.resources
-C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddFaculty.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\ClosedXML.dll
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
