@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class AdminDashboardForm : Form
     {
+        private Button selectedButton;
         public AdminDashboardForm()
         {
             InitializeComponent();
@@ -20,6 +21,16 @@ namespace WindowsFormsApp1
         private void MenuItem_Click(object sender, EventArgs e)
         {
             if (!(sender is Button clickedButton)) return;
+
+            // Reset previous selected button
+            if (selectedButton != null)
+            {
+                selectedButton.BackColor = Color.FromArgb(52, 73, 94); // Default color
+            }
+
+            // Set new selected button
+            selectedButton = clickedButton;
+            selectedButton.BackColor = Color.FromArgb(28, 96, 165); // Hover color
 
             string tag = clickedButton.Tag.ToString();
 
@@ -32,10 +43,10 @@ namespace WindowsFormsApp1
                     ShowStudentManagement();
                     break;
                 case "instructors":
-                    MessageBox.Show("Opening Instructor Management...");
+                    MessageBox.Show("Opening Course Management...");
                     break;
                 case "faculties":
-                    MessageBox.Show("Opening Faculty & Departments...");
+                    ShowFacultyManagement();
                     break;
                 case "courses":
                     MessageBox.Show("Opening Course Management...");
@@ -54,16 +65,34 @@ namespace WindowsFormsApp1
 
         private void ShowDashboard()
         {
-            // Dashboard is already shown by default
+            contentpanel.Controls.Clear();
+            Label label = new Label();
+            label.Text = "Welcome to Admin Dashboard";
+            label.Font = new Font("Segoe UI", 16, FontStyle.Bold);
+            label.ForeColor = Color.White;
+            label.AutoSize = false;
+            label.TextAlign = ContentAlignment.MiddleCenter;
+            label.Dock = DockStyle.Fill;
+            label.BackColor = Color.Transparent;
+
+            contentpanel.Controls.Add(label);
         }
 
         private void ShowStudentManagement()
         {
-            this.Close();
-            StudentManagementForm student = new StudentManagementForm();
-            student.Show();
+
         }
 
+        private void ShowFacultyManagement()
+        {
+            contentpanel.Controls.Clear();
+
+            var form = new FacultyManagement();
+            form.TopLevel = false;
+            contentpanel.Controls.Add(form);
+            form.Show();
+
+        }
         private void Card_Paint(object sender, PaintEventArgs e)
         {
             Panel card = (Panel)sender;
@@ -90,7 +119,7 @@ namespace WindowsFormsApp1
 
         private void AdminDashboardForm_Load(object sender, EventArgs e)
         {
-            // Set tags for menu buttons
+
             btnDashboard.Tag = "dashboard";
             btnStudents.Tag = "students";
             btnInstructors.Tag = "instructors";
@@ -99,6 +128,14 @@ namespace WindowsFormsApp1
             btnAttendance.Tag = "attendance";
             btnReports.Tag = "reports";
             btnSettings.Tag = "settings";
+
+
+            foreach (Button btn in sidebar.Controls.OfType<Button>())
+            {
+                btn.BackColor = Color.FromArgb(52, 73, 94);
+            }
         }
+
+       
     }
 }

@@ -37,38 +37,14 @@
             this.btnInstructors = new System.Windows.Forms.Button();
             this.btnStudents = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.contentPanel = new System.Windows.Forms.Panel();
-            this.statsContainer = new System.Windows.Forms.Panel();
-            this.cardAttendance = new System.Windows.Forms.Panel();
-            this.lblAttendanceTitle = new System.Windows.Forms.Label();
-            this.lblAttendanceValue = new System.Windows.Forms.Label();
-            this.lblAttendanceIcon = new System.Windows.Forms.Label();
-            this.cardCourses = new System.Windows.Forms.Panel();
-            this.lblCoursesTitle = new System.Windows.Forms.Label();
-            this.lblCoursesValue = new System.Windows.Forms.Label();
-            this.lblCoursesIcon = new System.Windows.Forms.Label();
-            this.cardInstructors = new System.Windows.Forms.Panel();
-            this.lblInstructorsTitle = new System.Windows.Forms.Label();
-            this.lblInstructorsValue = new System.Windows.Forms.Label();
-            this.lblInstructorsIcon = new System.Windows.Forms.Label();
-            this.cardStudents = new System.Windows.Forms.Panel();
-            this.lblStudentsTitle = new System.Windows.Forms.Label();
-            this.lblStudentsValue = new System.Windows.Forms.Label();
-            this.lblStudentsIcon = new System.Windows.Forms.Label();
-            this.dashboardTitle = new System.Windows.Forms.Label();
             this.mainContainer = new System.Windows.Forms.Panel();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.userPanel = new System.Windows.Forms.Panel();
             this.logoutBtn = new System.Windows.Forms.Button();
             this.userWelcome = new System.Windows.Forms.Label();
             this.headerTitle = new System.Windows.Forms.Label();
+            this.contentpanel = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
-            this.contentPanel.SuspendLayout();
-            this.statsContainer.SuspendLayout();
-            this.cardAttendance.SuspendLayout();
-            this.cardCourses.SuspendLayout();
-            this.cardInstructors.SuspendLayout();
-            this.cardStudents.SuspendLayout();
             this.mainContainer.SuspendLayout();
             this.headerPanel.SuspendLayout();
             this.userPanel.SuspendLayout();
@@ -88,7 +64,7 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 68);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(250, 732);
+            this.sidebar.Size = new System.Drawing.Size(250, 681);
             this.sidebar.TabIndex = 0;
             // 
             // btnSettings
@@ -181,7 +157,7 @@
             this.btnFaculties.Name = "btnFaculties";
             this.btnFaculties.Size = new System.Drawing.Size(230, 50);
             this.btnFaculties.TabIndex = 3;
-            this.btnFaculties.Text = "🏫  Faculty & Departments";
+            this.btnFaculties.Text = "🏫  Faculty Management";
             this.btnFaculties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFaculties.UseVisualStyleBackColor = false;
             this.btnFaculties.Click += new System.EventHandler(this.MenuItem_Click);
@@ -243,230 +219,16 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.MenuItem_Click);
             // 
-            // contentPanel
-            // 
-            this.contentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.contentPanel.Controls.Add(this.statsContainer);
-            this.contentPanel.Controls.Add(this.dashboardTitle);
-            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPanel.Location = new System.Drawing.Point(250, 68);
-            this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Padding = new System.Windows.Forms.Padding(30);
-            this.contentPanel.Size = new System.Drawing.Size(950, 732);
-            this.contentPanel.TabIndex = 1;
-            // 
-            // statsContainer
-            // 
-            this.statsContainer.Controls.Add(this.cardAttendance);
-            this.statsContainer.Controls.Add(this.cardCourses);
-            this.statsContainer.Controls.Add(this.cardInstructors);
-            this.statsContainer.Controls.Add(this.cardStudents);
-            this.statsContainer.Location = new System.Drawing.Point(33, 83);
-            this.statsContainer.Name = "statsContainer";
-            this.statsContainer.Size = new System.Drawing.Size(884, 120);
-            this.statsContainer.TabIndex = 1;
-            // 
-            // cardAttendance
-            // 
-            this.cardAttendance.BackColor = System.Drawing.Color.White;
-            this.cardAttendance.Controls.Add(this.lblAttendanceTitle);
-            this.cardAttendance.Controls.Add(this.lblAttendanceValue);
-            this.cardAttendance.Controls.Add(this.lblAttendanceIcon);
-            this.cardAttendance.Location = new System.Drawing.Point(660, 0);
-            this.cardAttendance.Name = "cardAttendance";
-            this.cardAttendance.Padding = new System.Windows.Forms.Padding(15);
-            this.cardAttendance.Size = new System.Drawing.Size(200, 100);
-            this.cardAttendance.TabIndex = 3;
-            this.cardAttendance.Paint += new System.Windows.Forms.PaintEventHandler(this.Card_Paint);
-            // 
-            // lblAttendanceTitle
-            // 
-            this.lblAttendanceTitle.AutoSize = true;
-            this.lblAttendanceTitle.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblAttendanceTitle.ForeColor = System.Drawing.Color.Gray;
-            this.lblAttendanceTitle.Location = new System.Drawing.Point(15, 60);
-            this.lblAttendanceTitle.Name = "lblAttendanceTitle";
-            this.lblAttendanceTitle.Size = new System.Drawing.Size(142, 23);
-            this.lblAttendanceTitle.TabIndex = 2;
-            this.lblAttendanceTitle.Text = "Today\'s Attendance";
-            // 
-            // lblAttendanceValue
-            // 
-            this.lblAttendanceValue.AutoSize = true;
-            this.lblAttendanceValue.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblAttendanceValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            this.lblAttendanceValue.Location = new System.Drawing.Point(50, 10);
-            this.lblAttendanceValue.Name = "lblAttendanceValue";
-            this.lblAttendanceValue.Size = new System.Drawing.Size(65, 46);
-            this.lblAttendanceValue.TabIndex = 1;
-            this.lblAttendanceValue.Text = "87%";
-            // 
-            // lblAttendanceIcon
-            // 
-            this.lblAttendanceIcon.AutoSize = true;
-            this.lblAttendanceIcon.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.lblAttendanceIcon.Location = new System.Drawing.Point(15, 15);
-            this.lblAttendanceIcon.Name = "lblAttendanceIcon";
-            this.lblAttendanceIcon.Size = new System.Drawing.Size(38, 37);
-            this.lblAttendanceIcon.TabIndex = 0;
-            this.lblAttendanceIcon.Text = "✅";
-            // 
-            // cardCourses
-            // 
-            this.cardCourses.BackColor = System.Drawing.Color.White;
-            this.cardCourses.Controls.Add(this.lblCoursesTitle);
-            this.cardCourses.Controls.Add(this.lblCoursesValue);
-            this.cardCourses.Controls.Add(this.lblCoursesIcon);
-            this.cardCourses.Location = new System.Drawing.Point(440, 0);
-            this.cardCourses.Name = "cardCourses";
-            this.cardCourses.Padding = new System.Windows.Forms.Padding(15);
-            this.cardCourses.Size = new System.Drawing.Size(200, 100);
-            this.cardCourses.TabIndex = 2;
-            this.cardCourses.Paint += new System.Windows.Forms.PaintEventHandler(this.Card_Paint);
-            // 
-            // lblCoursesTitle
-            // 
-            this.lblCoursesTitle.AutoSize = true;
-            this.lblCoursesTitle.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblCoursesTitle.ForeColor = System.Drawing.Color.Gray;
-            this.lblCoursesTitle.Location = new System.Drawing.Point(15, 60);
-            this.lblCoursesTitle.Name = "lblCoursesTitle";
-            this.lblCoursesTitle.Size = new System.Drawing.Size(128, 23);
-            this.lblCoursesTitle.TabIndex = 2;
-            this.lblCoursesTitle.Text = "Current Courses";
-            // 
-            // lblCoursesValue
-            // 
-            this.lblCoursesValue.AutoSize = true;
-            this.lblCoursesValue.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblCoursesValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(0)))));
-            this.lblCoursesValue.Location = new System.Drawing.Point(50, 10);
-            this.lblCoursesValue.Name = "lblCoursesValue";
-            this.lblCoursesValue.Size = new System.Drawing.Size(57, 46);
-            this.lblCoursesValue.TabIndex = 1;
-            this.lblCoursesValue.Text = "32";
-            // 
-            // lblCoursesIcon
-            // 
-            this.lblCoursesIcon.AutoSize = true;
-            this.lblCoursesIcon.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.lblCoursesIcon.Location = new System.Drawing.Point(15, 15);
-            this.lblCoursesIcon.Name = "lblCoursesIcon";
-            this.lblCoursesIcon.Size = new System.Drawing.Size(38, 37);
-            this.lblCoursesIcon.TabIndex = 0;
-            this.lblCoursesIcon.Text = "📚";
-            // 
-            // cardInstructors
-            // 
-            this.cardInstructors.BackColor = System.Drawing.Color.White;
-            this.cardInstructors.Controls.Add(this.lblInstructorsTitle);
-            this.cardInstructors.Controls.Add(this.lblInstructorsValue);
-            this.cardInstructors.Controls.Add(this.lblInstructorsIcon);
-            this.cardInstructors.Location = new System.Drawing.Point(220, 0);
-            this.cardInstructors.Name = "cardInstructors";
-            this.cardInstructors.Padding = new System.Windows.Forms.Padding(15);
-            this.cardInstructors.Size = new System.Drawing.Size(200, 100);
-            this.cardInstructors.TabIndex = 1;
-            this.cardInstructors.Paint += new System.Windows.Forms.PaintEventHandler(this.Card_Paint);
-            // 
-            // lblInstructorsTitle
-            // 
-            this.lblInstructorsTitle.AutoSize = true;
-            this.lblInstructorsTitle.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblInstructorsTitle.ForeColor = System.Drawing.Color.Gray;
-            this.lblInstructorsTitle.Location = new System.Drawing.Point(15, 60);
-            this.lblInstructorsTitle.Name = "lblInstructorsTitle";
-            this.lblInstructorsTitle.Size = new System.Drawing.Size(148, 23);
-            this.lblInstructorsTitle.TabIndex = 2;
-            this.lblInstructorsTitle.Text = "Active Instructors";
-            // 
-            // lblInstructorsValue
-            // 
-            this.lblInstructorsValue.AutoSize = true;
-            this.lblInstructorsValue.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblInstructorsValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(202)))), ((int)(((byte)(139)))));
-            this.lblInstructorsValue.Location = new System.Drawing.Point(50, 10);
-            this.lblInstructorsValue.Name = "lblInstructorsValue";
-            this.lblInstructorsValue.Size = new System.Drawing.Size(57, 46);
-            this.lblInstructorsValue.TabIndex = 1;
-            this.lblInstructorsValue.Text = "48";
-            // 
-            // lblInstructorsIcon
-            // 
-            this.lblInstructorsIcon.AutoSize = true;
-            this.lblInstructorsIcon.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.lblInstructorsIcon.Location = new System.Drawing.Point(15, 15);
-            this.lblInstructorsIcon.Name = "lblInstructorsIcon";
-            this.lblInstructorsIcon.Size = new System.Drawing.Size(38, 37);
-            this.lblInstructorsIcon.TabIndex = 0;
-            this.lblInstructorsIcon.Text = "👨‍🏫";
-            // 
-            // cardStudents
-            // 
-            this.cardStudents.BackColor = System.Drawing.Color.White;
-            this.cardStudents.Controls.Add(this.lblStudentsTitle);
-            this.cardStudents.Controls.Add(this.lblStudentsValue);
-            this.cardStudents.Controls.Add(this.lblStudentsIcon);
-            this.cardStudents.Location = new System.Drawing.Point(0, 0);
-            this.cardStudents.Name = "cardStudents";
-            this.cardStudents.Padding = new System.Windows.Forms.Padding(15);
-            this.cardStudents.Size = new System.Drawing.Size(200, 100);
-            this.cardStudents.TabIndex = 0;
-            this.cardStudents.Paint += new System.Windows.Forms.PaintEventHandler(this.Card_Paint);
-            // 
-            // lblStudentsTitle
-            // 
-            this.lblStudentsTitle.AutoSize = true;
-            this.lblStudentsTitle.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblStudentsTitle.ForeColor = System.Drawing.Color.Gray;
-            this.lblStudentsTitle.Location = new System.Drawing.Point(15, 60);
-            this.lblStudentsTitle.Name = "lblStudentsTitle";
-            this.lblStudentsTitle.Size = new System.Drawing.Size(116, 23);
-            this.lblStudentsTitle.TabIndex = 2;
-            this.lblStudentsTitle.Text = "Total Students";
-            // 
-            // lblStudentsValue
-            // 
-            this.lblStudentsValue.AutoSize = true;
-            this.lblStudentsValue.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblStudentsValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(232)))));
-            this.lblStudentsValue.Location = new System.Drawing.Point(50, 10);
-            this.lblStudentsValue.Name = "lblStudentsValue";
-            this.lblStudentsValue.Size = new System.Drawing.Size(109, 46);
-            this.lblStudentsValue.TabIndex = 1;
-            this.lblStudentsValue.Text = "1,247";
-            // 
-            // lblStudentsIcon
-            // 
-            this.lblStudentsIcon.AutoSize = true;
-            this.lblStudentsIcon.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.lblStudentsIcon.Location = new System.Drawing.Point(15, 15);
-            this.lblStudentsIcon.Name = "lblStudentsIcon";
-            this.lblStudentsIcon.Size = new System.Drawing.Size(38, 37);
-            this.lblStudentsIcon.TabIndex = 0;
-            this.lblStudentsIcon.Text = "🎓";
-            // 
-            // dashboardTitle
-            // 
-            this.dashboardTitle.AutoSize = true;
-            this.dashboardTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.dashboardTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.dashboardTitle.Location = new System.Drawing.Point(23, 23);
-            this.dashboardTitle.Name = "dashboardTitle";
-            this.dashboardTitle.Size = new System.Drawing.Size(340, 41);
-            this.dashboardTitle.TabIndex = 0;
-            this.dashboardTitle.Text = "DASHBOARD OVERVIEW";
-            // 
             // mainContainer
             // 
             this.mainContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.mainContainer.Controls.Add(this.contentPanel);
+            this.mainContainer.Controls.Add(this.contentpanel);
             this.mainContainer.Controls.Add(this.sidebar);
             this.mainContainer.Controls.Add(this.headerPanel);
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainContainer.Location = new System.Drawing.Point(0, 0);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(1200, 800);
+            this.mainContainer.Size = new System.Drawing.Size(1199, 749);
             this.mainContainer.TabIndex = 2;
             // 
             // headerPanel
@@ -477,7 +239,7 @@
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1200, 68);
+            this.headerPanel.Size = new System.Drawing.Size(1199, 68);
             this.headerPanel.TabIndex = 2;
             // 
             // userPanel
@@ -486,7 +248,7 @@
             this.userPanel.Controls.Add(this.logoutBtn);
             this.userPanel.Controls.Add(this.userWelcome);
             this.userPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.userPanel.Location = new System.Drawing.Point(1000, 0);
+            this.userPanel.Location = new System.Drawing.Point(999, 0);
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(200, 68);
             this.userPanel.TabIndex = 1;
@@ -513,7 +275,7 @@
             this.userWelcome.ForeColor = System.Drawing.Color.White;
             this.userWelcome.Location = new System.Drawing.Point(20, 15);
             this.userWelcome.Name = "userWelcome";
-            this.userWelcome.Size = new System.Drawing.Size(133, 23);
+            this.userWelcome.Size = new System.Drawing.Size(111, 19);
             this.userWelcome.TabIndex = 0;
             this.userWelcome.Text = "Welcome, Admin";
             // 
@@ -524,36 +286,31 @@
             this.headerTitle.ForeColor = System.Drawing.Color.White;
             this.headerTitle.Location = new System.Drawing.Point(0, 0);
             this.headerTitle.Name = "headerTitle";
-            this.headerTitle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.headerTitle.Size = new System.Drawing.Size(1200, 68);
+            this.headerTitle.Size = new System.Drawing.Size(1199, 68);
             this.headerTitle.TabIndex = 0;
             this.headerTitle.Text = "FACIAL ATTENDANCE SYSTEM";
             this.headerTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // contentpanel
+            // 
+            this.contentpanel.Location = new System.Drawing.Point(247, 68);
+            this.contentpanel.Name = "contentpanel";
+            this.contentpanel.Size = new System.Drawing.Size(952, 681);
+            this.contentpanel.TabIndex = 3;
+            // 
             // AdminDashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.ClientSize = new System.Drawing.Size(1200, 749);
             this.Controls.Add(this.mainContainer);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "AdminDashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Facial Attendance System - Admin Dashboard";
+            this.Text = "Facial Attendance System";
             this.Load += new System.EventHandler(this.AdminDashboardForm_Load);
             this.sidebar.ResumeLayout(false);
-            this.contentPanel.ResumeLayout(false);
-            this.contentPanel.PerformLayout();
-            this.statsContainer.ResumeLayout(false);
-            this.cardAttendance.ResumeLayout(false);
-            this.cardAttendance.PerformLayout();
-            this.cardCourses.ResumeLayout(false);
-            this.cardCourses.PerformLayout();
-            this.cardInstructors.ResumeLayout(false);
-            this.cardInstructors.PerformLayout();
-            this.cardStudents.ResumeLayout(false);
-            this.cardStudents.PerformLayout();
             this.mainContainer.ResumeLayout(false);
             this.headerPanel.ResumeLayout(false);
             this.userPanel.ResumeLayout(false);
@@ -573,30 +330,12 @@
         private System.Windows.Forms.Button btnFaculties;
         private System.Windows.Forms.Button btnInstructors;
         private System.Windows.Forms.Button btnStudents;
-        private System.Windows.Forms.Panel contentPanel;
-        private System.Windows.Forms.Panel statsContainer;
-        private System.Windows.Forms.Panel cardStudents;
-        private System.Windows.Forms.Label lblStudentsTitle;
-        private System.Windows.Forms.Label lblStudentsValue;
-        private System.Windows.Forms.Label lblStudentsIcon;
-        private System.Windows.Forms.Panel cardInstructors;
-        private System.Windows.Forms.Label lblInstructorsTitle;
-        private System.Windows.Forms.Label lblInstructorsValue;
-        private System.Windows.Forms.Label lblInstructorsIcon;
-        private System.Windows.Forms.Panel cardCourses;
-        private System.Windows.Forms.Label lblCoursesTitle;
-        private System.Windows.Forms.Label lblCoursesValue;
-        private System.Windows.Forms.Label lblCoursesIcon;
-        private System.Windows.Forms.Panel cardAttendance;
-        private System.Windows.Forms.Label lblAttendanceTitle;
-        private System.Windows.Forms.Label lblAttendanceValue;
-        private System.Windows.Forms.Label lblAttendanceIcon;
-        private System.Windows.Forms.Label dashboardTitle;
         private System.Windows.Forms.Panel mainContainer;
         private System.Windows.Forms.Panel headerPanel;
         private System.Windows.Forms.Panel userPanel;
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.Label userWelcome;
         private System.Windows.Forms.Label headerTitle;
+        private System.Windows.Forms.Panel contentpanel;
     }
 }
