@@ -64,7 +64,7 @@
             this.userWelcome = new System.Windows.Forms.Label();
             this.headerTitle = new System.Windows.Forms.Label();
 
-            this.contentpanel = new System.Windows.Forms.Panel();
+          //  this.contentpanel = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
 
             this.sidebar.SuspendLayout();

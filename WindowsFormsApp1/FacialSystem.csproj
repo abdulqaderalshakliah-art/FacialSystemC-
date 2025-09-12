@@ -60,6 +60,10 @@
     <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="RBush, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c77e27b81f4d0187, processorArchitecture=MSIL">
       <HintPath>..\packages\RBush.Signed.4.0.0\lib\net47\RBush.dll</HintPath>
     </Reference>
@@ -94,6 +98,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddFaculty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +123,12 @@
     <Compile Include="AdminDashboardForm.Designer.cs">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourseManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseManagment.Designer.cs">
+      <DependentUpon>CourseManagment.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBconnection.cs" />
     <Compile Include="DeleteMajor.cs">
       <SubType>Form</SubType>
@@ -123,12 +139,11 @@
     <Compile Include="FacultyManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-<Compile Include="FacultyManagement.Designer.cs">
-  <DependentUpon>FacultyManagement.cs</DependentUpon>
-</Compile>
+    <Compile Include="FacultyManagement.Designer.cs">
+      <DependentUpon>FacultyManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="IconButton.cs" />
     <Compile Include="loadfaculties.cs" />
-
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +164,9 @@
     <Compile Include="updateMajor.Designer.cs">
       <DependentUpon>updateMajor.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddFaculty.resx">
       <DependentUpon>AddFaculty.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseManagment.resx">
+      <DependentUpon>CourseManagment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteMajor.resx">
       <DependentUpon>DeleteMajor.cs</DependentUpon>

@@ -161,7 +161,7 @@ namespace WindowsFormsApp1
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show( "For assistance, please contact the system administrator:\nEng. Abdulqader",
+            MessageBox.Show( "For assistance, please contact the system administrators",
              "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

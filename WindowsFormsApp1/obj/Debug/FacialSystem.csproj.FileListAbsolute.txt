@@ -61,3 +61,10 @@ C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\EntityFrame
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddMajor.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.updateMajor.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DeleteMajor.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddFaculty.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddMajor.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DeleteMajor.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FacultyManagement.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.updateMajor.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddCourse.resources
+C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CourseManagment.resources

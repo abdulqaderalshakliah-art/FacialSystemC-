@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            string connectionString = DB.conn;
+            string connectionString = @"Data Source=DESKTOP-6H2GG0Q\SQLEXPRESS;Initial Catalog=FacialSystem;Integrated Security=True;TrustServerCertificate=True";
 
             if (AuthenticateAdmin(username, password, connectionString))
             {

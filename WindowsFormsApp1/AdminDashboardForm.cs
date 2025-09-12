@@ -53,7 +53,7 @@ namespace WindowsFormsApp1
                     ShowFacultyManagement();
                     break;
                 case "courses":
-                    MessageBox.Show("Opening Course Management...");
+                    ShowCourseManagment();
                     break;
                 case "attendance":
                     MessageBox.Show("Opening Attendance...");
@@ -101,8 +101,18 @@ namespace WindowsFormsApp1
 
         }
 
-         
-        
+        private void ShowCourseManagment()
+        {
+            contentpanel.Controls.Clear();
+
+            var form = new CourseManagment();
+            form.TopLevel = false;
+            contentpanel.Controls.Add(form);
+            form.Show();
+
+        }
+
+
 
 
         private void Card_Paint(object sender, PaintEventArgs e)
