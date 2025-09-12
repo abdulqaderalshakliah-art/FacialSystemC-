@@ -46,8 +46,7 @@ namespace WindowsFormsApp1
                     ShowStudentManagement();
                     break;
                 case "instructors":
-
-                    MessageBox.Show("Opening Course Management...");
+                    ShowinstructorsManagement();
                     break;
                 case "faculties":
                     ShowFacultyManagement();
@@ -59,9 +58,9 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Opening Attendance...");
                     break;
                 case "reports":
-                    MessageBox.Show("Opening Reports & Analytics...");
+                   
                     break;
-                case "settings":
+                case "users_managment":
                     ShowUsersManagement();
                     break;
             }
@@ -87,6 +86,17 @@ namespace WindowsFormsApp1
         private void ShowStudentManagement()
         {
 
+
+        }
+
+        private void ShowinstructorsManagement()
+        {
+            contentpanel.Controls.Clear();
+
+            var form4 = new InstructorsManagment();
+            form4.TopLevel = false;
+            contentpanel.Controls.Add(form4);
+            form4.Show();
 
         }
 
@@ -158,7 +168,7 @@ namespace WindowsFormsApp1
             btnCourses.Tag = "courses";
             btnAttendance.Tag = "attendance";
             btnReports.Tag = "reports";
-            btnUsers.Tag = "settings";
+            btnUsers.Tag = "users_managment";
 
 
 

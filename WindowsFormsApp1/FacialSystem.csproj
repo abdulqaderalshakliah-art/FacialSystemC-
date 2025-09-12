@@ -110,6 +110,12 @@
     <Compile Include="AddFaculty.Designer.cs">
       <DependentUpon>AddFaculty.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInstructor.Designer.cs">
+      <DependentUpon>AddInstructor.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddMajor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,12 @@
       <DependentUpon>FacultyManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="IconButton.cs" />
+    <Compile Include="InstructorsManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorsManagment.Designer.cs">
+      <DependentUpon>InstructorsManagment.cs</DependentUpon>
+    </Compile>
     <Compile Include="loadfaculties.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -182,6 +194,9 @@
     <EmbeddedResource Include="AddFaculty.resx">
       <DependentUpon>AddFaculty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddInstructor.resx">
+      <DependentUpon>AddInstructor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddMajor.resx">
       <DependentUpon>AddMajor.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FacultyManagement.resx">
       <DependentUpon>FacultyManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorsManagment.resx">
+      <DependentUpon>InstructorsManagment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
