@@ -117,6 +117,12 @@
       <DependentUpon>AddMajor.cs</DependentUpon>
     </Compile>
     <Compile Include="AddEditStudentForm.cs" />
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,12 @@
     <Compile Include="updateMajor.Designer.cs">
       <DependentUpon>updateMajor.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsersManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersManagment.Designer.cs">
+      <DependentUpon>UsersManagment.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCourse.resx">
       <DependentUpon>AddCourse.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddMajor.resx">
       <DependentUpon>AddMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
@@ -203,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="updateMajor.resx">
       <DependentUpon>updateMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersManagment.resx">
+      <DependentUpon>UsersManagment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

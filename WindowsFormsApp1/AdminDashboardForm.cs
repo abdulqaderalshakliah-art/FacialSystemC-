@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Opening Reports & Analytics...");
                     break;
                 case "settings":
-                    MessageBox.Show("Opening System Settings...");
+                    ShowUsersManagement();
                     break;
             }
         }
@@ -105,14 +105,21 @@ namespace WindowsFormsApp1
         {
             contentpanel.Controls.Clear();
 
-            var form = new CourseManagment();
-            form.TopLevel = false;
-            contentpanel.Controls.Add(form);
-            form.Show();
+            var form2 = new CourseManagment();
+            form2.TopLevel = false;
+            contentpanel.Controls.Add(form2);
+            form2.Show();
 
         }
 
+        private void ShowUsersManagement()
+        {
 
+            var form3 = new UsersManagment();
+            form3.TopLevel = false;
+            contentpanel.Controls.Add(form3);
+            form3.Show();
+        }
 
 
         private void Card_Paint(object sender, PaintEventArgs e)
@@ -151,7 +158,7 @@ namespace WindowsFormsApp1
             btnCourses.Tag = "courses";
             btnAttendance.Tag = "attendance";
             btnReports.Tag = "reports";
-            btnSettings.Tag = "settings";
+            btnUsers.Tag = "settings";
 
 
 

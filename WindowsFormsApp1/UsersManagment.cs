@@ -11,56 +11,52 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class CourseManagment : Form
+    public partial class UsersManagment : Form
     {
         private DBconnection dbHelper;
-        public CourseManagment()
+
+        public UsersManagment()
         {
             InitializeComponent();
             dbHelper = new DBconnection();
         }
 
-        private void LoadCourses()
+        private void LoadUsers()
         {
-            string query = @"SELECT c.course_id, c.course_name, c.course_code, 
-                            d.department_name, i.full_name as instructor_name
-                            FROM Courses c
-                            INNER JOIN Departments d ON c.department_id = d.department_id
-                            INNER JOIN Instructors i ON c.instructor_id = i.instructor_id
-                            ORDER BY c.course_id DESC";
+            string query = @"select username , email ,role from Admins";
 
             DataTable dt = dbHelper.ExecuteQuery(query);
             dataGridViewCourses.DataSource = dt;
         }
-        private void CourseManagment_Load(object sender, EventArgs e)
+
+        private void UsersManagment_Load(object sender, EventArgs e)
         {
-            LoadCourses();
+            LoadUsers();
         }
 
         private void CourseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (var form = new AddCourse())
+            using (var form = new AddUser())
             {
-                form.Owner = this; // So it can call LoadFaculties() after saving
-                form.ShowDialog(); // Show as dialog (modal)
-                LoadCourses();
+                form.Owner = this; 
+                form.ShowDialog();
+                LoadUsers();
             }
         }
 
-
-        private void courseToolStripMenuItem_Click(object sender, EventArgs e)
+        private void majorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dataGridViewCourses.SelectedRows.Count == 0)
             {
-                MessageBox.Show("select course to edit", "warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("select user to edit", "warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            int courseId = Convert.ToInt32(dataGridViewCourses.SelectedRows[0].Cells["course_id"].Value);
-            AddCourse editForm = new AddCourse(courseId);
+            int UserId = Convert.ToInt32(dataGridViewCourses.SelectedRows[0].Cells["admin_id"].Value);
+            AddUser editForm = new AddUser(UserId);
             if (editForm.ShowDialog() == DialogResult.OK)
             {
-                LoadCourses();
+                LoadUsers();
             }
         }
 
@@ -68,20 +64,20 @@ namespace WindowsFormsApp1
         {
             if (dataGridViewCourses.SelectedRows.Count == 0)
             {
-                MessageBox.Show("selsect subject to delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("selsect user to delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            int courseId = Convert.ToInt32(dataGridViewCourses.SelectedRows[0].Cells["course_id"].Value);
-            string courseName = dataGridViewCourses.SelectedRows[0].Cells["course_name"].Value.ToString();
+            int UserId = Convert.ToInt32(dataGridViewCourses.SelectedRows[0].Cells["admin_id"].Value);
+            string UserName = dataGridViewCourses.SelectedRows[0].Cells["username"].Value.ToString();
 
-            DialogResult result = MessageBox.Show($"do you want to delete {courseName}؟", "deletation",
+            DialogResult result = MessageBox.Show($"do you want to delete {UserName}؟", "deletation",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
-                string query = "DELETE FROM Courses WHERE course_id = @id";
-                var parameters = new[] { new System.Data.SqlClient.SqlParameter("@id", courseId) };
+                string query = "DELETE FROM Admins WHERE admin_id = @id";
+                var parameters = new[] { new System.Data.SqlClient.SqlParameter("@id", UserId) };
 
                 try
                 {
@@ -89,7 +85,7 @@ namespace WindowsFormsApp1
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("delete done", "suceesfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadCourses();
+                        LoadUsers();
                     }
                 }
                 catch (Exception ex)
@@ -114,7 +110,7 @@ namespace WindowsFormsApp1
                 connection.Open();
 
                 // ✅ استخدام شرط البحث إذا كان `searchQuery` غير فارغ
-                string query = "SELECT ID, course_name, course_code FROM Courses WHERE course_name LIKE @SearchQuery";
+                string query = "SELECT ID, username, password_hash FROM Courses WHERE username LIKE @SearchQuery";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
