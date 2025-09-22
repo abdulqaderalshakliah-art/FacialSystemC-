@@ -68,3 +68,7 @@ C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFor
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.updateMajor.resources
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddCourse.resources
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CourseManagment.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddInstructor.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddUser.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.InstructorsManagment.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UsersManagment.resources
