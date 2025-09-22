@@ -104,7 +104,7 @@ namespace WindowsFormsApp1
                 }
 
                 string sql = "UPDATE Departments SET department_name = @Name WHERE department_id = @Id";
-                using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
+                using (SqlConnection conn = new SqlConnection(DBconnection.conn))
                 {
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {

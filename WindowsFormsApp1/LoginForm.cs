@@ -35,10 +35,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Please enter both username and password.");
                 return;
             }
-            string conn= DB.conn;
-           // string connectionString = @"Data Source=DESKTOP-6H2GG0Q\SQLEXPRESS;Initial Catalog=FacialSystem;Integrated Security=True;TrustServerCertificate=True";
+            
+           string connectionString = @"Data Source=DESKTOP-POL7I1U\SQLEXPRESS;Initial Catalog=facialSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
-            if (AuthenticateAdmin(username, password, conn))
+            if (AuthenticateAdmin(username, password, connectionString))
             {
                 MessageBox.Show("Login successful!");
                 AdminDashboardForm dashboard = new AdminDashboardForm();

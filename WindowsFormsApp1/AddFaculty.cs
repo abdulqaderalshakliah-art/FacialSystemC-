@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
+                using (SqlConnection conn = new SqlConnection(DBconnection.conn))
                 {
                     string sql = "INSERT INTO Faculties (faculty_name) VALUES (@Name)";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
                     {
                         try
                         {
-                            using (SqlConnection conn = new SqlConnection(new DBconnection().conn)) // ← FIXED
+                            using (SqlConnection conn = new SqlConnection(DBconnection.conn)) // ← FIXED
                             {
                                 string sql = "INSERT INTO Faculties (faculty_name) VALUES (@Name)";
                                 using (SqlCommand cmd = new SqlCommand(sql, conn))

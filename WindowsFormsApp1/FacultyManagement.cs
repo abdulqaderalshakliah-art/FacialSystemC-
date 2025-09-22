@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
                 string sql = "SELECT faculty_id, faculty_name FROM Faculties ORDER BY faculty_id ASC";
                 DataTable dt = new DataTable();
 
-                using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
+                using (SqlConnection conn = new SqlConnection(DBconnection.conn))
                 {
                     using (SqlDataAdapter adapter = new SqlDataAdapter(sql, conn))
                     {
@@ -95,7 +95,7 @@ namespace WindowsFormsApp1
 
             DataTable dt = new DataTable();
 
-            using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
+            using (SqlConnection conn = new SqlConnection(DBconnection.conn))
             {
                 using (SqlDataAdapter adapter = new SqlDataAdapter(sql, conn))
                 {
