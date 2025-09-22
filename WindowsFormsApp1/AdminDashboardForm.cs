@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
         private void ShowDashboard()
         {
 
-            contentpanel.Controls.Clear();
+            contentPanel.Controls.Clear();
             Label label = new Label();
             label.Text = "Welcome to Admin Dashboard";
             label.Font = new Font("Segoe UI", 16, FontStyle.Bold);
@@ -79,45 +79,50 @@ namespace WindowsFormsApp1
             label.Dock = DockStyle.Fill;
             label.BackColor = Color.Transparent;
 
-            contentpanel.Controls.Add(label);
+            contentPanel.Controls.Add(label);
 
         }
 
         private void ShowStudentManagement()
         {
+            contentPanel.Controls.Clear();
 
+            var form5 = new StudentManagement();
+            form5.TopLevel = false;
+            contentPanel.Controls.Add(form5);
+            form5.Show();
 
         }
 
         private void ShowinstructorsManagement()
         {
-            contentpanel.Controls.Clear();
+            contentPanel.Controls.Clear();
 
             var form4 = new InstructorsManagment();
             form4.TopLevel = false;
-            contentpanel.Controls.Add(form4);
+            contentPanel.Controls.Add(form4);
             form4.Show();
 
         }
 
         private void ShowFacultyManagement()
         {
-            contentpanel.Controls.Clear();
+            contentPanel.Controls.Clear();
 
             var form = new FacultyManagement();
             form.TopLevel = false;
-            contentpanel.Controls.Add(form);
+            contentPanel.Controls.Add(form);
             form.Show();
 
         }
 
         private void ShowCourseManagment()
         {
-            contentpanel.Controls.Clear();
+            contentPanel.Controls.Clear();
 
             var form2 = new CourseManagment();
             form2.TopLevel = false;
-            contentpanel.Controls.Add(form2);
+            contentPanel.Controls.Add(form2);
             form2.Show();
 
         }
@@ -127,7 +132,7 @@ namespace WindowsFormsApp1
 
             var form3 = new UsersManagment();
             form3.TopLevel = false;
-            contentpanel.Controls.Add(form3);
+            contentPanel.Controls.Add(form3);
             form3.Show();
         }
 
@@ -178,8 +183,10 @@ namespace WindowsFormsApp1
             }
         }
 
-       
+        private void contentPanel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
+    }
 
     }

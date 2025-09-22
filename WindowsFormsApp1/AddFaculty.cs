@@ -156,6 +156,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        
+        private void AddFaculty_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

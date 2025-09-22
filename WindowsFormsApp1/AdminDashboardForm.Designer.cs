@@ -181,7 +181,7 @@
             this.btnFaculties.Name = "btnFaculties";
             this.btnFaculties.Size = new System.Drawing.Size(230, 50);
             this.btnFaculties.TabIndex = 3;
-            this.btnFaculties.Text = "🏫  Faculty & Departments";
+            this.btnFaculties.Text = "🏫  Faculty Departments";
             this.btnFaculties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFaculties.UseVisualStyleBackColor = false;
             this.btnFaculties.Click += new System.EventHandler(this.MenuItem_Click);
@@ -248,12 +248,12 @@
             this.contentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.contentPanel.Controls.Add(this.statsContainer);
             this.contentPanel.Controls.Add(this.dashboardTitle);
-            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contentPanel.Location = new System.Drawing.Point(250, 68);
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Padding = new System.Windows.Forms.Padding(30);
-            this.contentPanel.Size = new System.Drawing.Size(950, 681);
+            this.contentPanel.Size = new System.Drawing.Size(946, 642);
             this.contentPanel.TabIndex = 3;
+            this.contentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.contentPanel_Paint);
             // 
             // statsContainer
             // 
@@ -463,10 +463,9 @@
             this.mainContainer.Controls.Add(this.contentPanel);
             this.mainContainer.Controls.Add(this.sidebar);
             this.mainContainer.Controls.Add(this.headerPanel);
-            this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainContainer.Location = new System.Drawing.Point(0, 0);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(1200, 749);
+            this.mainContainer.Size = new System.Drawing.Size(1201, 749);
             this.mainContainer.TabIndex = 2;
             // 
             // headerPanel
@@ -477,7 +476,7 @@
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1200, 68);
+            this.headerPanel.Size = new System.Drawing.Size(1201, 68);
             this.headerPanel.TabIndex = 2;
             // 
             // userPanel
@@ -486,7 +485,7 @@
             this.userPanel.Controls.Add(this.logoutBtn);
             this.userPanel.Controls.Add(this.userWelcome);
             this.userPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.userPanel.Location = new System.Drawing.Point(1000, 0);
+            this.userPanel.Location = new System.Drawing.Point(1001, 0);
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(200, 68);
             this.userPanel.TabIndex = 1;
@@ -524,7 +523,7 @@
             this.headerTitle.ForeColor = System.Drawing.Color.White;
             this.headerTitle.Location = new System.Drawing.Point(0, 0);
             this.headerTitle.Name = "headerTitle";
-            this.headerTitle.Size = new System.Drawing.Size(1200, 68);
+            this.headerTitle.Size = new System.Drawing.Size(1201, 68);
             this.headerTitle.TabIndex = 0;
             this.headerTitle.Text = "FACIAL ATTENDANCE SYSTEM";
             this.headerTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -537,6 +536,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 749);
             this.Controls.Add(this.mainContainer);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.MaximizeBox = false;
             this.Name = "AdminDashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facial Attendance System - Admin Dashboard";
@@ -600,7 +600,7 @@
         private System.Windows.Forms.Label userWelcome;
         private System.Windows.Forms.Label headerTitle;
 
-        private System.Windows.Forms.Panel contentpanel;
+    
 
     }
 }

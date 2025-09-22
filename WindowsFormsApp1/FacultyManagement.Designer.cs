@@ -56,7 +56,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(934, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(946, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -76,7 +76,7 @@
             // 
             this.facultyToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.facultyToolStripMenuItem.Name = "facultyToolStripMenuItem";
-            this.facultyToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.facultyToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.facultyToolStripMenuItem.Text = "Faculty";
             this.facultyToolStripMenuItem.Click += new System.EventHandler(this.facultyToolStripMenuItem_Click);
             // 
@@ -84,7 +84,7 @@
             // 
             this.majorsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.majorsToolStripMenuItem.Name = "majorsToolStripMenuItem";
-            this.majorsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.majorsToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.majorsToolStripMenuItem.Text = "Major";
             this.majorsToolStripMenuItem.Click += new System.EventHandler(this.majorsToolStripMenuItem_Click);
             // 
@@ -139,7 +139,7 @@
             this.dataGridViewFaculties.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFaculties.Location = new System.Drawing.Point(0, 84);
             this.dataGridViewFaculties.Name = "dataGridViewFaculties";
-            this.dataGridViewFaculties.Size = new System.Drawing.Size(934, 557);
+            this.dataGridViewFaculties.Size = new System.Drawing.Size(945, 557);
             this.dataGridViewFaculties.TabIndex = 1;
             // 
             // label1
@@ -177,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 642);
+            this.ClientSize = new System.Drawing.Size(946, 642);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.label1);

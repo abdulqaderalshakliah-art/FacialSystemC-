@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RaveMath.NETS</name>
+    </assembly>
+    <members>
+        <member name="T:RaveMath.NETS.MathCore">
+            <summary>
+            Helper class for core maths.
+            </summary>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.Clamp``1(``0,``0,``0)">
+            <summary>
+            Clamps this value within the specified bounds.
+            </summary>
+            <param name="self">This value to clamp.</param>
+            <param name="min">The minimum value.</param>
+            <param name="max">The maximum value.</param>
+            <returns>Clamped value.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.Round(System.Single)">
+            <summary>
+            Rounds this value.
+            </summary>
+            <param name="self">The current <see cref="T:System.Single" />.</param>
+            <returns>The rounded <see cref="T:System.Int32" /> value.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.Round(System.Double)">
+            <summary>
+            Rounds this value.
+            </summary>
+            <param name="self">The current <see cref="T:System.Double" /> value.</param>
+            <returns>The rounded value.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.Swap(System.Int32@,System.Int32@)">
+            <summary>
+            Swaps two integers.
+            </summary>
+            <param name="x">The first integer.</param>
+            <param name="y">The second integer.</param>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.ToDegrees(System.Single)">
+            <summary>
+            Converts this radian value to degrees.
+            </summary>
+            <param name="self">The current radian value.</param>
+            <returns>The converted degrees.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.ToDegrees(System.Double)">
+            <summary>
+            Converts this radian value to degrees.
+            </summary>
+            <param name="self">The current radian value.</param>
+            <returns>The converted degrees.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.ToDegrees(System.Int32)">
+            <summary>
+            Converts this radian value to degrees.
+            </summary>
+            <param name="self">The current radian value.</param>
+            <returns>The converted degrees.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.ToRadians(System.Int32)">
+            <summary>
+            Converts to radians.
+            </summary>
+            <param name="value">The degrees.</param>
+            <returns>The radians.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.ToRadians(System.Single)">
+            <summary>
+            Converts to radians.
+            </summary>
+            <param name="value">The degrees.</param>
+            <returns>The radians.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.MathCore.ToRadians(System.Double)">
+            <summary>
+            Converts to radians.
+            </summary>
+            <param name="value">The degrees.</param>
+            <returns>The radians.</returns>
+        </member>
+        <member name="T:RaveMath.NETS.Statistics">
+            <summary>
+            Extension methods for statistics.
+            </summary>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.StdDev(System.Double[])">
+            <summary>
+            Gets the standard deviation of this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <returns>The standard deviation.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.StdDev(System.Double[],System.Double)">
+            <summary>
+            Gets the standard deviation of <paramref name="value" /> from this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <param name="value">The value.</param>
+            <returns>The standard deviation of <paramref name="value" />.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.StdDev(System.Single[])">
+            <summary>
+            Gets the standard deviation of this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <returns>The standard deviation.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.StdDev(System.Single[],System.Single)">
+            <summary>
+            Gets the standard deviation of <paramref name="value" /> from this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <param name="value">The value.</param>
+            <returns>The standard deviation of <paramref name="value" />.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.Variance(System.Double[])">
+            <summary>
+            Gets the variance of this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <returns>The variance.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.Variance(System.Double[],System.Double)">
+            <summary>
+            Gets the variance of <paramref name="value" /> from this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <param name="value">The value.</param>
+            <returns>The variance of <paramref name="value" />.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.Variance(System.Single[],System.Single)">
+            <summary>
+            Gets the variance of <paramref name="value" /> from this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <param name="value">The value.</param>
+            <returns>The variance of <paramref name="value" />.</returns>
+        </member>
+        <member name="M:RaveMath.NETS.Statistics.Variance(System.Single[])">
+            <summary>
+            Gets the variance of this array.
+            </summary>
+            <param name="self">The current array.</param>
+            <returns>The variance.</returns>
+        </member>
+    </members>
+</doc>

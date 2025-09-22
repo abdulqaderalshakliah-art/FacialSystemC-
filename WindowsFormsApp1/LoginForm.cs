@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
     public partial class LoginForm : Form
     {
 
-        DBconnection DB= new DBconnection();
+      
         public LoginForm()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            string connectionString = @"Data Source=DESKTOP-6H2GG0Q\SQLEXPRESS;Initial Catalog=FacialSystem;Integrated Security=True;TrustServerCertificate=True";
+            string connectionString = @"Data Source=DESKTOP-POL7I1U\SQLEXPRESS;Initial Catalog=FacialSystem;Integrated Security=True;TrustServerCertificate=True";
 
             if (AuthenticateAdmin(username, password, connectionString))
             {

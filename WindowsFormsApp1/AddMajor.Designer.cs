@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿using System;
+
+namespace WindowsFormsApp1
 {
     partial class AddMajor
     {
@@ -122,6 +124,8 @@
 
         }
 
+    
+
         #endregion
 
         private System.Windows.Forms.ComboBox combofaculty;
@@ -130,5 +134,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnimport;
+      
     }
 }

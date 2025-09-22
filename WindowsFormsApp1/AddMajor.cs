@@ -13,6 +13,7 @@ using ClosedXML.Excel;
 namespace WindowsFormsApp1
 {
     public partial class AddMajor : Form
+
     {
         private Dictionary<string, int> facultyIdMap;
 
@@ -24,32 +25,32 @@ namespace WindowsFormsApp1
         private void LoadFacultiesIntoComboBox()
         {
 
-    
-             string sql = "SELECT faculty_id, faculty_name FROM Faculties ORDER BY faculty_name";
-                facultyIdMap = new Dictionary<string, int>();
 
-                using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
-                {
+            string sql = "SELECT faculty_id, faculty_name FROM Faculties ORDER BY faculty_name";
+            facultyIdMap = new Dictionary<string, int>();
+
+            using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
+            {
                 conn.Open();
                 using (SqlDataReader reader = new SqlCommand(sql, conn).ExecuteReader())
+                {
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            string name = reader["faculty_name"].ToString();
-                            int id = Convert.ToInt32(reader["faculty_id"]);
-                            facultyIdMap[name] = id;
-                            combofaculty.Items.Add(name); // ← Uses your ComboBox
-                        }
+                        string name = reader["faculty_name"].ToString();
+                        int id = Convert.ToInt32(reader["faculty_id"]);
+                        facultyIdMap[name] = id;
+                        combofaculty.Items.Add(name); // ← Uses your ComboBox
                     }
                 }
+            }
 
             combofaculty.SelectedIndex = -1;
         }
 
-          
-                
 
-    private void button1_Click(object sender, EventArgs e)
+
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
 
@@ -102,7 +103,7 @@ namespace WindowsFormsApp1
 
         private void btnimport_Click(object sender, EventArgs e)
         {
-        
+
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Excel Files|*.xls;*.xlsx|All Files|*.*";
             ofd.Title = "Select Excel File";
@@ -171,7 +172,7 @@ namespace WindowsFormsApp1
 
                 // 👇 COPY YOUR "ADD" BUTTON LOGIC — Insert majors
                 int successCount = 0;
-                string sql= "INSERT INTO Departments (department_name, faculty_id) VALUES (@Name, @FacultyId)";
+                string sql = "INSERT INTO Departments (department_name, faculty_id) VALUES (@Name, @FacultyId)";
 
                 foreach (string majorName in majors)
                 {
@@ -215,7 +216,8 @@ namespace WindowsFormsApp1
 
         }
     }
-    }
+}
+    
 
 
 

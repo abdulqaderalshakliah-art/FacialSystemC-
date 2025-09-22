@@ -1,0 +1,2232 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmguEx</name>
+    </assembly>
+    <members>
+        <member name="T:EmguEx.Blobs">
+            <summary>
+            Helper class for blobs processing.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Blobs.NumBlobs(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},System.Boolean)">
+            <summary>
+            Get the numbers of blobs.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="nonDestructive">if set to <c>true</c> use non-destructive counting; otherwise, the image will be modified. Defaults to <c>true</c>.</param>
+            <returns>
+            The number of blobs.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Blobs.RemoveBlobsByLength(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},System.Int32)">
+            <summary>
+            Remove blobs by length.
+            </summary>
+            <param name="image">This image to filter.</param>
+            <param name="minLength">Minimum length.</param>
+        </member>
+        <member name="M:EmguEx.Blobs.RemoveNonMatchingBlobs(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte})">
+            <summary>
+            Remove blobs in this image without a matching blob.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="model">Image with matching blobs.</param>
+        </member>
+        <member name="T:EmguEx.ColorComponents`1">
+            <summary>
+            Simplifies manipulation of colour components in a colour image.
+            </summary>
+        </member>
+        <member name="M:EmguEx.ColorComponents`1.#ctor(Emgu.CV.Image{Emgu.CV.Structure.Bgr,`0})">
+            <summary>
+            Initializes a new instance of this class.
+            </summary>
+            <param name="image">The image.</param>
+        </member>
+        <member name="P:EmguEx.ColorComponents`1.Blue">
+            <summary>
+            Gets the blue component.
+            </summary>
+            <value>
+            The blue component.
+            </value>
+        </member>
+        <member name="P:EmguEx.ColorComponents`1.Green">
+            <summary>
+            Gets the green component.
+            </summary>
+            <value>
+            The green component.
+            </value>
+        </member>
+        <member name="P:EmguEx.ColorComponents`1.Red">
+            <summary>
+            Gets the red component.
+            </summary>
+            <value>
+            The red component.
+            </value>
+        </member>
+        <member name="T:EmguEx.ColorComponentsGpu`1">
+            <summary>
+            Simplifies manipulation of colour components in a colour image using GPU.
+            </summary>
+        </member>
+        <member name="M:EmguEx.ColorComponentsGpu`1.#ctor(Emgu.CV.Cuda.CudaImage{Emgu.CV.Structure.Bgr,`0})">
+            <summary>
+            Initializes a new instance of this class.
+            </summary>
+            <param name="image">The image.</param>
+        </member>
+        <member name="P:EmguEx.ColorComponentsGpu`1.Blue">
+            <summary>
+            Gets the blue component.
+            </summary>
+            <value>
+            The blue component.
+            </value>
+        </member>
+        <member name="P:EmguEx.ColorComponentsGpu`1.Green">
+            <summary>
+            Gets the green component.
+            </summary>
+            <value>
+            The green component.
+            </value>
+        </member>
+        <member name="P:EmguEx.ColorComponentsGpu`1.Red">
+            <summary>
+            Gets the red component.
+            </summary>
+            <value>
+            The red component.
+            </value>
+        </member>
+        <member name="M:EmguEx.ColorComponentsGpu`1.Dispose">
+            <summary>
+            Disposes this instance.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Console.ConsoleHelper">
+            <summary>
+            Helper methods to draw image in the console window.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Console.ConsoleHelper.DrawImage(System.Drawing.Image,System.Drawing.Point,System.Drawing.Size)">
+            <summary>
+            Draws an image on the console window.
+            </summary>
+            <param name="image"></param>
+            <param name="location"></param>
+            <param name="imageSize"></param>
+        </member>
+        <member name="T:EmguEx.EasyOutput">
+            <summary>
+            Helper class to create output image files.
+            </summary>
+        </member>
+        <member name="M:EmguEx.EasyOutput.#ctor(System.String)">
+            <summary>
+            Creates an instance of this class.
+            </summary>
+            <param name="path">Output path.</param>
+        </member>
+        <member name="M:EmguEx.EasyOutput.Dispose">
+            <summary>
+            Disposes this object.
+            </summary>
+        </member>
+        <member name="M:EmguEx.EasyOutput.GetPath(System.String,System.String)">
+            <summary>
+            Gets the output path given the specified file name and parameters used to create the file.
+            </summary>
+            <param name="paramsStr"></param>
+            <param name="file"></param>
+            <returns>Path.</returns>
+        </member>
+        <member name="M:EmguEx.EasyOutput.GetPath2(System.String,System.String)">
+            <summary>
+            Gets the output path given the specified file name and parameters used to create the file.
+            </summary>
+            <param name="paramsStr"></param>
+            <param name="file"></param>
+            <returns>Path.</returns>
+        </member>
+        <member name="T:EmguEx.EmguNetwork">
+            <summary>
+            Helper methods for network data packets.
+            </summary>
+        </member>
+        <member name="M:EmguEx.EmguNetwork.ToEmguCvImage(System.Byte[])">
+            <summary>
+            Converts this byte array into an EmguCV image buffer.
+            </summary>
+            <param name="bytes">Byte array of image file.</param>
+            <returns>EmguCV image buffer.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.EllipseEx">
+            <summary>
+            Implements ellipses conversion methods.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.EllipseEx.FromDotNet(Emgu.CV.Structure.Ellipse,System.Single)">
+            <summary>
+            Converts this ellipse from .NET to EmguCV angle.
+            </summary>
+            <param name="ellipse">This .NET ellipse.</param>
+            <param name="angle">The difference in angle.</param>
+            <returns>
+            The EmguCV equivalent.
+            </returns>
+        </member>
+        <member name="T:EmguEx.Geometry.Geometry2D">
+            <summary>
+            Methods for 2D geometry.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.BresenhamLine(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Returns the Bresenham line from this point to the <paramref name="destination" /> point.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <param name="destination">The destination <see cref="T:System.Drawing.PointF" />.</param>
+            <returns>An array of line points.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.BresenhamLine(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Returns the Bresenham line from this point to the <paramref name="destination" /> point.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.Point" />.</param>
+            <param name="destination">The destination <see cref="T:System.Drawing.Point" />.</param>
+            <returns>An array of line points.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            pt0
+            or
+            pt1
+            </exception>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.CosineSimilarity(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Gets the cosine similarity between this vector and the <paramref name="target" /> vector.
+            </summary>
+            <param name="self">The current vector.</param>
+            <param name="target">The target vector.</param>
+            <returns>
+            A similarity value [-1,1] where 1 indicates exact similarity, -1 indicates exact opposite, and 0 usually
+            indicates independence.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Cross(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Gets the cross product between this vector and the <paramref name="target" /> vector.
+            </summary>
+            <param name="self">The current vector.</param>
+            <param name="target">The target vector.</param>
+            <returns>The cross product.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Distance(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Gets the distance or hypotenuse from this point to the <paramref name="destination" /> point.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.Point" />.</param>
+            <param name="destination">The destination <see cref="T:System.Drawing.Point" />.</param>
+            <returns>The Euclidean distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Distance(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Gets the distance or hypotenuse from this point to the <paramref name="destination" /> point.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <param name="destination">The destination <see cref="T:System.Drawing.PointF" />.</param>
+            <returns>The Euclidean distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.DistanceToLine(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Boolean)">
+            <summary>
+            Computes the distance from this point to the line or segment AB.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="pointA">The endpoint A.</param>
+            <param name="pointB">The endpoint B.</param>
+            <param name="isSegment">if set to <c>true</c> AB is a segment, not a line.</param>
+            <returns>The distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.DistanceToLine(System.Drawing.PointF,Emgu.CV.Structure.LineSegment2DF)">
+            <summary>
+            Computes the distance from this point to specified the line segment.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="line">The line segment.</param>
+            <returns>
+            The distance.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.DistanceToLine(System.Drawing.Point,Emgu.CV.Structure.LineSegment2DF)">
+            <summary>
+            Computes the distance from this point to specified the line segment.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="line">The line segment.</param>
+            <returns>
+            The distance.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.DistanceToLine(System.Drawing.Point,System.Drawing.PointF,System.Drawing.PointF,System.Boolean)">
+            <summary>
+            Computes the distance from this point to the line or segment AB.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="pointA">The endpoint A.</param>
+            <param name="pointB">The endpoint B.</param>
+            <param name="isSegment">if set to <c>true</c> AB is a segment, not a line.</param>
+            <returns>The distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Dot(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Gets the dot product between this vector and the <paramref name="target" /> vector.
+            </summary>
+            <param name="self">The current vector.</param>
+            <param name="target">The vector.</param>
+            <returns>The dot product.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.FindEllipseSegmentIntersections(System.Drawing.RectangleF,System.Drawing.PointF,System.Drawing.PointF,System.Boolean)">
+            <summary>
+            Finds the intersections between an ellipse and a line.
+            </summary>
+            <param name="rect">The rectangle of the ellipse.</param>
+            <param name="pt1">The first line endpoint.</param>
+            <param name="pt2">The second line endpoint.</param>
+            <param name="segmentOnly">if set to <c>true</c> line s a segment.</param>
+            <returns>PointF[].</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.GetAngleFromOrigin(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Gets the angle of a line from the horizon.
+            </summary>
+            <param name="self">The current point on the line.</param>
+            <param name="origin">The origin.</param>
+            <returns>The angle in degrees.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.GetBoundingBox(System.Drawing.Point[])">
+            <summary>
+            Gets the bounding box of a polygon.
+            </summary>
+            <param name="polygon">The polygon.</param>
+            <returns>The bounding box.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.GetPerpendicularLine(System.Drawing.PointF,System.Drawing.PointF,System.Single)">
+            <summary>
+            Gets the perpendicular line.
+            </summary>
+            <param name="a">First point on line.</param>
+            <param name="b">Second point on line.</param>
+            <param name="len">The length of the perpendicular line.</param>
+            <returns>The vertices of the perpendicular from the origin.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.GetPointAngleOnEllipse(Emgu.CV.Structure.Ellipse,System.Drawing.PointF)">
+            <summary>
+            Gets the angle of the specified point on this ellipse.
+            </summary>
+            <param name="ellipse">This ellipse.</param>
+            <param name="point">The point on the ellipse.</param>
+            <returns>System.Single.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.IsEmpty(Emgu.CV.Structure.Ellipse)">
+            <summary>
+            Determines whether the specified ellipse is empty.
+            </summary>
+            <param name="ellipse">The ellipse.</param>
+            <returns><c>true</c> if the specified ellipse is empty; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.IsPointInEllipse(Emgu.CV.Structure.Ellipse,System.Drawing.Point)">
+            <summary>
+            Determines whether the specified point in within this ellipse.
+            </summary>
+            <param name="ellipse">This ellipse.</param>
+            <param name="point">The point.</param>
+            <returns><c>true</c> if point is in ellipse; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.IsPointOnEllipse(Emgu.CV.Structure.Ellipse,System.Drawing.PointF@,System.Single)">
+            <summary>
+            Determines whether the specified point is on this ellipse.
+            </summary>
+            <param name="ellipse">This ellipse.</param>
+            <param name="point">The point to check. This is replaced by the nearest discrete point on the ellipse.</param>
+            <param name="maxDist">The maximum distance.</param>
+            <returns><c>true</c> if point is on ellipse; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Magnitude(System.Drawing.PointF)">
+            <summary>
+            Gets the magnitude of this vector.
+            </summary>
+            <param name="self">The self.</param>
+            <returns>System.Single.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Midpoint(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Gets the mid-point from this point to the <paramref name="destination" /> point.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <param name="destination">The destination <see cref="T:System.Drawing.PointF" />.</param>
+            <returns>The mid-point.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Normalized(System.Drawing.PointF)">
+            <summary>
+            Gets the normalized version of this vector.
+            </summary>
+            <param name="self">The self.</param>
+            <returns>PointF.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.PointFromEllipse(Emgu.CV.Structure.Ellipse,System.Drawing.PointF@)">
+            <summary>
+            Get the distance of the specified point from ellipse.
+            </summary>
+            <param name="ellipse">The ellipse.</param>
+            <param name="point">The point to measure. This is replaced by the nearest discrete point on the ellipse.</param>
+            <returns>The distance from the ellipse.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.PointFromEllipse(System.Drawing.Rectangle,System.Single)">
+            <summary>
+            Get a point from the ellipse defined by the intersection between a line originating from the elliptical centre and
+            ellipse.
+            </summary>
+            <param name="bounds">The bounds of the ellipse.</param>
+            <param name="degrees">The angle of the intersecting line in degrees from the X axis.</param>
+            <returns>PointF.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Project(System.Drawing.PointF,System.Drawing.PointF,System.Single)">
+            <summary>
+            Projects this point to the direction of <paramref name="destination" />.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <param name="destination">The destination point.</param>
+            <param name="normDist">
+            The normalized distance from the current point where 0 is the current position and a value of 1 projects the
+            current point exactly onto the
+            <paramref name="destination" />
+            position.
+            </param>
+            <returns>Projected <see cref="T:System.Drawing.PointF" />.</returns>
+            <exception cref="T:System.NullReferenceException">Current point is empty.</exception>
+            <exception cref="T:System.ArgumentNullException">destination</exception>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.RotateAround(System.Drawing.PointF,System.Drawing.PointF,System.Double)">
+            <summary>
+            Rotates this point around <paramref name="origin" />.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="origin">The centre of rotation.</param>
+            <param name="angle">The rotation angle in degrees.</param>
+            <returns>The rotated point.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.Scale(System.Drawing.PointF,System.Single)">
+            <summary>
+            Scales this vector.
+            </summary>
+            <param name="self">The current vector.</param>
+            <param name="scale">The scale.</param>
+            <returns>The scaled vector.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToMinAreaRect(Emgu.CV.Structure.Ellipse)">
+            <summary>
+            Gets the minimum area rectangle.
+            </summary>
+            <param name="ellipse">The ellipse.</param>
+            <returns>Rectangle.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToMinAreaRectEx(Emgu.CV.Structure.Ellipse)">
+            <summary>
+            Gets the minimum area rectangle.
+            </summary>
+            <param name="ellipse">The ellipse.</param>
+            <returns>Rectangle.</returns>
+            <exception cref="T:System.NotSupportedException">$Elliptical angle of {angle} is not supported</exception>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToPoint(System.Drawing.PointF)">
+            <summary>
+            Converts this point to a <see cref="T:System.Drawing.Point" /> object.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <returns>A <see cref="T:System.Drawing.Point" /> that represents the current <see cref="T:System.Drawing.PointF" />.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToPointF(System.Drawing.Point)">
+            <summary>
+            Converts this point to a <see cref="T:System.Drawing.PointF" /> object.
+            </summary>
+            <param name="self">The self.</param>
+            <returns>A <see cref="T:System.Drawing.PointF" /> that represents the current <see cref="T:System.Drawing.Point" />.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToPointFArray(System.Drawing.Point[])">
+            <summary>
+            Converts this <see cref="T:System.Drawing.Point" /> array to a <see cref="T:System.Drawing.PointF" /> array.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.Point" /> array.</param>
+            <returns>The <see cref="T:System.Drawing.PointF" /> array.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToSize(Emgu.CV.Structure.Ellipse)">
+            <summary>
+            Gets the minimum size.
+            </summary>
+            <param name="ellipse">The ellipse.</param>
+            <returns>Size.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToString(System.Drawing.PointF,System.String)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this <see cref="T:System.Drawing.PointF" />.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <param name="format">The number format specifier.</param>
+            <returns>A <see cref="T:System.String" /> that represents this point.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToString(System.Drawing.PointF[])">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this point array.
+            </summary>
+            <param name="self">The current point array.</param>
+            <returns>A <see cref="T:System.String" /> that represents the current point array.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry2D.ToString(System.Drawing.Point[])">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this point array.
+            </summary>
+            <param name="self">The current point array.</param>
+            <returns>A <see cref="T:System.String" /> that represents the current point array.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.Geometry3D">
+            <summary>
+            Extension methods for 3D geometry.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.Centroid(Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+            Gets the centroid of this point set.
+            </summary>
+            <param name="self">The current point set.</param>
+            <returns>The centroid.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.Distance(Emgu.CV.Structure.MCvPoint3D32f,Emgu.CV.Structure.MCvPoint3D32f)">
+            <summary>
+            Gets the Euclidean distance between this <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> and the <paramref name="destination" />.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <param name="destination">The destination <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <returns>Euclidean distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.EnclosingCuboid(Emgu.CV.Structure.MCvPoint3D32f[],Emgu.CV.Structure.MCvPoint3D32f@,Emgu.CV.Structure.MCvPoint3D32f@)">
+            <summary>
+            Gets the minimum enclosing rectangular cuboid containing this point set defined by the minimum and maximum
+            vertices.
+            </summary>
+            <param name="self">The current point set.</param>
+            <param name="minVertex">The minimum vertex.</param>
+            <param name="maxVertex">The maximum vertex.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.Planarity(Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+            Get the maximum planarity of this point set.
+            </summary>
+            <param name="self">The current point set.</param>
+            <returns>The smaller the value, the more planar the current point set.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.Reproject(System.Drawing.PointF,Emgu.CV.Matrix{System.Double},Emgu.CV.Matrix{System.Double},System.Single)">
+            <summary>
+            Back-projects this image <see cref="T:System.Drawing.PointF" /> to world coordinates.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <param name="rotationMatrix">The rotation matrix.</param>
+            <param name="intrinsicMatrix">The intrinsic matrix.</param>
+            <param name="z">The z coordinate to complete the world coordinates.</param>
+            <returns>The world coordinates.</returns>
+            <example>
+            This code shows how to get the back-projected coordinates from the camera in EmguCV.
+            <code>
+            MCvPoint3D32f observedWorldPt = observedWorld[i];
+            MCvPoint3D32f projWorldPt =
+            observedCamPt.Reproject(
+            parms.ExtrinsicParameters.ExtrinsicMatrix.GetSubRect(new Rectangle(0, 0, 3, 3)),
+            parms.CameraParameters.IntrinsicMatrix, observedWorldPt.z);
+            </code>
+            </example>
+            <remarks>The optical centre is assumed to be at the origin of the world coordinate system [0,0,0].</remarks>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.SolveProjectionMatrix(Emgu.CV.Matrix{System.Double},Emgu.CV.Matrix{System.Double},System.Boolean,Emgu.CV.Matrix{System.Double}@)">
+            <summary>
+            Solves the projection matrix, <paramref name="lhs" /> * <paramref name="proj" /> = <paramref name="rhs" />.
+            </summary>
+            <param name="lhs">The original coordinates.</param>
+            <param name="rhs">The coordinates after transformation.</param>
+            <param name="isHomogenous">if set to <c>true</c> the coordinates are homogenous.</param>
+            <param name="proj">The projection matrix to solve.</param>
+            <returns>The projection error.</returns>
+            <exception cref="T:System.AccessViolationException">Fundamental matrix must be solved first.</exception>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.TestProjection(Emgu.CV.Matrix{System.Double},System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Tests the projection matrix.
+            </summary>
+            <param name="mat">The projection matrix.</param>
+            <param name="x">The x coordinate.</param>
+            <param name="y">The y coordinate.</param>
+            <param name="z">The z coordinate.</param>
+            <param name="isHomogeneous">
+            if set to <c>true</c>, the system is homogeneous.
+            </param>
+            <returns>The projected coordinates.</returns>
+            <exception cref="T:System.ArgumentNullException">mat</exception>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.ToStr(Emgu.CV.Structure.MCvPoint3D32f)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.ToStr(Emgu.CV.Structure.MCvPoint3D32f,System.String)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <param name="format">The format.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.ToStr(Emgu.CV.Structure.MCvPoint3D64f)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.ToString(Emgu.CV.Structure.MCvPoint3D32f,System.String)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <param name="format">The string format specifier.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.ToString(Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this point set.
+            </summary>
+            <param name="self">The current point set.</param>
+            <returns>A <see cref="T:System.String" /> that represents the current point set.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.Geometry3D.PlanarPoint">
+            <summary>
+            Abstraction of a planar point.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.Geometry3D.PlanarPoint.Dist">
+            <summary>
+            The maximum distance from other points.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.Geometry3D.PlanarPoint.Point">
+            <summary>
+            The point in real-world coordinates.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry3D.PlanarPoint.Create(System.Double,Emgu.CV.Structure.MCvPoint3D32f)">
+            <summary>
+            Creates an <see cref="T:EmguEx.Geometry.Geometry3D.PlanarPoint" /> instance.
+            </summary>
+            <param name="dist">The maximum distance from other points.</param>
+            <param name="point">The point in real-world coordinates.</param>
+            <returns>The <see cref="T:EmguEx.Geometry.Geometry3D.PlanarPoint" /> instance.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.DepthMapIntensityType">
+            <summary>
+            Type of intensity to use for displaying depth from the viewer.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.DepthMapIntensityType.FartherBrighter">
+            <summary>
+            The farther the brighter the pixel intensity.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.DepthMapIntensityType.NearerBrighter">
+            <summary>
+            The nearer the brighter the pixel intensity.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Geometry.Geometry">
+            <summary>
+            Geometry methods with no third-party dependencies.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.Add(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Adds the <paramref name="source" /> vector to <paramref name="target" />.
+            </summary>
+            <param name="source">The source vector.</param>
+            <param name="target">The target vector.</param>
+            <returns>The added vector.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.Add(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Adds the specified target.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="target">The target.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.CrossProduct(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Computes the cross product of AB X AC.
+            </summary>
+            <param name="pointA">The point A.</param>
+            <param name="pointB">The point B.</param>
+            <param name="pointC">The point C.</param>
+            <returns>The cross product.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.DotProduct(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Compute the dot product AB . AC
+            </summary>
+            <param name="pointA">The point A.</param>
+            <param name="pointB">The point B.</param>
+            <param name="pointC">The point C.</param>
+            <returns>The dot product.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.GetEllipseSemiY(System.Single,System.Single,System.Single)">
+            <summary>
+            Gets the semi Y-axis of an ellipse.
+            </summary>
+            <param name="x">The X coordinate.</param>
+            <param name="y">The Y coordinate.</param>
+            <param name="a">The semi X axis.</param>
+            <returns>The semi Y axis.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.GetEllipseX(System.Single,System.Single,System.Single)">
+            <summary>
+            Gets the positive X coordinate given the Y coordinate of an ellipse.
+            </summary>
+            <param name="y">The Y coordinate.</param>
+            <param name="a">The semi X-axis.</param>
+            <param name="b">The semi Y-axis.</param>
+            <returns>The X coordinate.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.GetEllipseY(System.Single,System.Single,System.Single)">
+            <summary>
+            Gets the positive Y coordinate given the X coordinate of an ellipse.
+            </summary>
+            <param name="x">The X coordinate.</param>
+            <param name="a">The semi X-axis.</param>
+            <param name="b">The semi Y-axis.</param>
+            <returns>The positive Y coordinate.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.GetEllipsoidSemiYAxis(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the semi-Y axis of an ellipsoid.
+            </summary>
+            <param name="x">The X coordinate.</param>
+            <param name="y">The y coordinate.</param>
+            <param name="z">The z coordinate.</param>
+            <param name="a">The semi X-axis.</param>
+            <param name="c">The semi Z-axis.</param>
+            <returns>The semi Y-axis.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.GetEllipsoidZ(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the positive Z coordinate given the X and Y coordinates of an ellipsoid.
+            </summary>
+            <param name="x">The X coordinate.</param>
+            <param name="y">The Y coordinate.</param>
+            <param name="a">The semi X-axis.</param>
+            <param name="b">The semi Y-axis.</param>
+            <param name="c">The semi Z-axis.</param>
+            <returns>
+            The positive Z coordinate.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.GetIntersection(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF@)">
+            <summary>
+            Finds the intersection of two lines.
+            </summary>
+            <param name="o1">The first end-point of first line segment.</param>
+            <param name="p1">The second end-point of second line segment.</param>
+            <param name="o2">The first end-point of second line segment.</param>
+            <param name="p2">The second end-point of second line segment.</param>
+            <param name="r">The intersection point.</param>
+            <returns>
+            <c>true</c> if a valid intersection is found; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.IsIntersect(System.Drawing.Point,System.Drawing.Point,System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Determines whether two line segments intersect each other.
+            </summary>
+            <param name="p1">The first endpoint of the first line.</param>
+            <param name="q1">The second endpoint of the first line.</param>
+            <param name="p2">The first endpoint of second line.</param>
+            <param name="q2">The second endpoint of the second line.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.IsIntersect(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Determines whether two line segments intersect each other.
+            </summary>
+            <param name="p1">The first endpoint of the first line.</param>
+            <param name="q1">The second endpoint of the first line.</param>
+            <param name="p2">The first endpoint of second line.</param>
+            <param name="q2">The second endpoint of the second line.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.Scale(System.Drawing.PointF,System.Single)">
+            <summary>
+            Scales the specified vector.
+            </summary>
+            <param name="source">The vector to scale.</param>
+            <param name="scale">The scale.</param>
+            <returns>The scaled vector.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.Subtract(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Subtracts <paramref name="target" /> from the vector <paramref name="source" />.
+            </summary>
+            <param name="source">The vector to subtract from.</param>
+            <param name="target">The vector to subtract with.</param>
+            <returns>The subtracted vector.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Geometry.Subtract(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Subtracts <paramref name="target" /> from the vector <paramref name="source" />.
+            </summary>
+            <param name="source">The vector to subtract from.</param>
+            <param name="target">The vector to subtract with.</param>
+            <returns>The subtracted vector.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.HomoTrans3D">
+            <summary>
+                Homogenous 3D transform.
+            </summary>
+        </member>
+        <member name="P:EmguEx.Geometry.HomoTrans3D.FundamentalMatrix">
+            <summary>
+                Gets the fundamental matrix.
+            </summary>
+            <value>The fundamental matrix.</value>
+        </member>
+        <member name="P:EmguEx.Geometry.HomoTrans3D.IsSolved">
+            <summary>
+                Gets a value indicating whether the fundamental matrix is available.
+            </summary>
+            <value><c>true</c> if the fundamental matrix is solved; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:EmguEx.Geometry.HomoTrans3D.Solve(Emgu.CV.Matrix{System.Double},Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Solves the Fundamental matrix.
+            </summary>
+            <param name="src">The source matrix.</param>
+            <param name="dst">The destination matrix.</param>
+            <returns>Projection error.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.HomoTrans3D.Solve(Emgu.CV.Structure.MCvPoint3D32f[],Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+                Solves the linear system.
+            </summary>
+            <param name="src">The set of points to transform.</param>
+            <param name="dst">The corresponding set of transformed points.</param>
+            <returns>Re-projection error on successful operation; otherwise, negative value on error.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">Points vectors are of different size.</exception>
+        </member>
+        <member name="M:EmguEx.Geometry.HomoTrans3D.ToString">
+            <summary>
+                Converts this instance to its equivalent string representation.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.Point3D">
+            <summary>
+            3D object representation.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.Point3D.X">
+            <summary>
+            X-coordinate value.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.Point3D.Y">
+            <summary>
+            Y-coordinate value.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Geometry.Point3D.Z">
+            <summary>
+            Z-coordinate value.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Constructs a 3D point with specified coordinates.
+            </summary>
+            <param name="x">X-coordinate.</param>
+            <param name="y">Y-coordinate.</param>
+            <param name="z">Z-coordinate.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used to de-serialize Point3D value.
+            </summary>
+            <param name="info">Holds the serialized object data about the exception being thrown.</param>
+            <param name="ctxt">Contains contextual information about the source or destination.</param>
+        </member>
+        <member name="P:EmguEx.Geometry.Point3D.Magnitude">
+            <summary>
+            Gets the magnitude of this vector.
+            </summary>
+            <value>The magnitude.</value>
+        </member>
+        <member name="P:EmguEx.Geometry.Point3D.Normalized">
+            <summary>
+            Gets the normalized version of this vector.
+            </summary>
+            <value>The normalized.</value>
+        </member>
+        <member name="P:EmguEx.Geometry.Point3D.Zero">
+            <summary>
+            Gets the zero (origin) coordinate point.
+            </summary>
+            <value>The zero.</value>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Performs a custom serialization.
+            </summary>
+            <param name="info">Holds the serialized object data about the exception being thrown.</param>
+            <param name="ctxt">Holds the contextual information about the source or destination.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.ClosestLinePoint(EmguEx.Geometry.Point3D,EmguEx.Geometry.Point3D)">
+            <summary>
+            Gets the closest line point from this point.
+            </summary>
+            <param name="endpointA">The first endpoint of the line.</param>
+            <param name="endpointB">The second endpoint of the line.</param>
+            <returns>The closest line point.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.CosineSimilarity(EmguEx.Geometry.Point3D,EmguEx.Geometry.Point3D)">
+            <summary>
+            Gets the cosine similarity between two vectors.
+            </summary>
+            <param name="a">First vector.</param>
+            <param name="b">Second vector.</param>
+            <returns>A similarity value [-1,1] where 1 indicates exact similarity, -1 indicates exact opposite, and 0 usually
+            indicates independence.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.Distance(EmguEx.Geometry.Point3D,EmguEx.Geometry.Point3D)">
+            <summary>
+            Gets the Euclidean distance between the two specified points.
+            </summary>
+            <param name="a">First point.</param>
+            <param name="b">Second point.</param>
+            <returns>Distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.Dot(EmguEx.Geometry.Point3D,EmguEx.Geometry.Point3D)">
+            <summary>
+            Gets the dot product between two specified vectors.
+            </summary>
+            <param name="lhs">First vector.</param>
+            <param name="rhs">Second vector.</param>
+            <returns>Result of dot product.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.op_Addition(EmguEx.Geometry.Point3D,EmguEx.Geometry.Point3D)">
+            <summary>
+            Performs addition of two specified vectors.
+            </summary>
+            <param name="lhs">First vector to add.</param>
+            <param name="rhs">Second vector to add.</param>
+            <returns>Result of addition.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.op_Division(EmguEx.Geometry.Point3D,System.Int32)">
+            <summary>
+            Performs division of a vector with a scalar.
+            </summary>
+            <param name="lhs">Vector to divide.</param>
+            <param name="rhs">Scalar divisor.</param>
+            <returns>Result of division.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.op_Division(EmguEx.Geometry.Point3D,System.Single)">
+            <summary>
+            Performs division of a vector with a scalar.
+            </summary>
+            <param name="lhs">Vector to divide.</param>
+            <param name="rhs">Scalar divisor.</param>
+            <returns>Result of division.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.op_Multiply(EmguEx.Geometry.Point3D,System.Single)">
+            <summary>
+            Performs multiplication of point with scalar value.
+            </summary>
+            <param name="lhs">The point to multiply.</param>
+            <param name="rhs">The scalar value to multiply.</param>
+            <returns>Result of multiplication.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.op_Subtraction(EmguEx.Geometry.Point3D,EmguEx.Geometry.Point3D)">
+            <summary>
+            Performs subtraction of two specified vectors.
+            </summary>
+            <param name="lhs">Vector to subtract from.</param>
+            <param name="rhs">Vector to subtract.</param>
+            <returns>Result of subtraction.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.ToPointF">
+            <summary>
+            Gets the equivalent PointF representation of the Point3D value of this instance using the X and Y coordinates. The
+            Z coordinate is ignored.
+            </summary>
+            <returns>PointF.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3D.ToString">
+            <summary>
+            Converts the Point3D value of this instance to its equivalent string representation.
+            </summary>
+            <returns>String representation.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.Point3DBinder">
+            <summary>
+            Binder for Point3D type.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Point3DBinder.BindToType(System.String,System.String)">
+            <summary>
+            When overridden in a derived class, controls the binding of a serialized object to a type.
+            </summary>
+            <param name="assemblyName">Specifies the <see cref="T:System.Reflection.Assembly" /> name of the serialized object.</param>
+            <param name="typeName">Specifies the <see cref="T:System.Type" /> name of the serialized object.</param>
+            <returns>The type of the object the formatter creates a new instance of.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.RectangleEx">
+            <summary>
+            Helper class for rectangle calculations.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.AvgDistance(System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Gets the average distance between this rectangle and the <paramref name="target" /> rectangle.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <param name="target">The target rectangle.</param>
+            <returns>The distance.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.Difference(System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Determines the difference between this rectangle and <paramref name="target" /> rectangle.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <param name="target">The target rectangle.</param>
+            <returns>The difference. A higher value indicates greater difference.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.GetCentre(System.Drawing.Rectangle)">
+            <summary>
+            Gets the centre of this rectangle.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <returns>The centre point.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.IsIntersect(System.Drawing.RectangleF,Emgu.CV.Structure.CircleF)">
+            <summary>
+            Determines whether this rectangle intersects the <paramref name="circle" />.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <param name="circle">The circle.</param>
+            <returns><c>true</c> if the current rectangle intersects the <paramref name="circle" />; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.IsPositiveValid(System.Drawing.Rectangle)">
+            <summary>
+            Determines whether this rectangle has zero or positive offsets and an non-empty size.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <returns><c>true</c> if the current rectangle is positive and valid; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.IsWithinBounds(System.Drawing.Rectangle,System.Drawing.Size)">
+            <summary>
+            Determines whether this rectangle is within a region of the specified <paramref name="size" />.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <param name="size">The size of the region.</param>
+            <returns>
+            <c>true</c> if the current rectangle is smaller than the region of the specified <paramref name="size" />;
+            otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.RectCenter(System.Drawing.Rectangle,System.Int32@,System.Int32@)">
+            <summary>
+            Gets the centre of this rectangle.
+            </summary>
+            <param name="r">This rectangle.</param>
+            <param name="x">The x-coordinate.</param>
+            <param name="y">The y-coordinate.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.Union(System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Finds the union of this rectangle and the <paramref name="target" /> rectangle.
+            </summary>
+            <param name="self">The current rectangle.</param>
+            <param name="target">The target rectangle.</param>
+            <returns>The union of both rectangles.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RectangleEx.ToRectangle(System.Drawing.RectangleF)">
+            <summary>
+            Round off this floating-point rectangle to a discreet one.
+            </summary>
+            <param name="rect">This rectangle.</param>
+            <returns>The discreet rectangle.</returns>
+        </member>
+        <member name="T:EmguEx.Geometry.RigidTrans3D">
+            <summary>
+                Rigid 3D transform.
+            </summary>
+        </member>
+        <member name="P:EmguEx.Geometry.RigidTrans3D.EssentialMatrix">
+            <summary>
+                Gets the essential matrix.
+            </summary>
+            <value>
+                The essential matrix.
+            </value>
+        </member>
+        <member name="P:EmguEx.Geometry.RigidTrans3D.IsSolved">
+            <summary>
+                Gets a value indicating whether the essential matrix is available.
+            </summary>
+            <value>
+                <c>true</c> if the essential matrix is solved; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:EmguEx.Geometry.RigidTrans3D.Solve(Emgu.CV.Matrix{System.Double},Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Solves the Essential matrix.
+            </summary>
+            <param name="src">The source matrix.</param>
+            <param name="dst">The destination matrix.</param>
+            <returns>Re-projection error.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.RigidTrans3D.Solve(Emgu.CV.Structure.MCvPoint3D32f[],Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+                Solves the linear system.
+            </summary>
+            <param name="src">The set of points to transform.</param>
+            <param name="dst">The corresponding set of transformed points.</param>
+            <returns>
+                Re-projection error on successful operation; otherwise, negative value on error.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">Points vectors are of different size.</exception>
+        </member>
+        <member name="M:EmguEx.Geometry.RigidTrans3D.ToString">
+            <summary>
+                Converts this instance to its equivalent string representation.
+            </summary>
+            <returns>
+                A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:EmguEx.Geometry.Rotation3D">
+            <summary>
+                Extension methods for 3D rotations.
+            </summary>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundX(Emgu.CV.Structure.MCvPoint3D32f,System.Single)">
+            <summary>
+                Gets the resultant position of this point after rotating it around the X-axis by the specified
+                <paramref name="angle" />.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="angle">The angle in degrees.</param>
+            <returns>The resultant position.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundX(Emgu.CV.Structure.MCvPoint3D32f@,System.Single)">
+            <summary>
+                Rotates the specified point around the X-axis.
+            </summary>
+            <param name="point">The point to rotate.</param>
+            <param name="angle">The angle in degrees.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundX(Emgu.CV.Structure.MCvPoint3D32f,Emgu.CV.Structure.MCvPoint3D32f,System.Single)">
+            <summary>
+                Rotates the specified point around the X-axis using the specified origin.
+            </summary>
+            <param name="self">The point.</param>
+            <param name="origin">The origin.</param>
+            <param name="angle">The angle in degrees.</param>
+            <returns>Rotated position.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundY(Emgu.CV.Structure.MCvPoint3D32f,System.Single)">
+            <summary>
+                Gets the resultant position of this point after rotating it around the Y-axis by the specified
+                <paramref name="angle" />.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="angle">The angle in degrees.</param>
+            <returns>The resultant position.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundY(Emgu.CV.Structure.MCvPoint3D32f@,System.Single)">
+            <summary>
+                Rotates the specified point around the Y-axis.
+            </summary>
+            <param name="point">The point to rotate.</param>
+            <param name="angle">The angle in degrees.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundY(Emgu.CV.Structure.MCvPoint3D32f,Emgu.CV.Structure.MCvPoint3D32f,System.Single)">
+            <summary>
+                Gets the resultant position of this point after rotating it around the Y-axis by the specified
+                <paramref name="angle" />.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="origin">The origin.</param>
+            <param name="angle">The angle in degrees.</param>
+            <returns>The resultant position.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundZ(Emgu.CV.Structure.MCvPoint3D32f,System.Single)">
+            <summary>
+                Gets the resultant position of this point after rotating it around the Z-axis by the specified
+                <paramref name="angle" />.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="angle">The angle in degrees.</param>
+            <returns>The resultant position.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundZ(Emgu.CV.Structure.MCvPoint3D32f@,System.Single)">
+            <summary>
+                Rotates the specified point around the Z-axis.
+            </summary>
+            <param name="point">The point to rotate.</param>
+            <param name="angle">The angle in degrees.</param>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.RotateAroundZ(Emgu.CV.Structure.MCvPoint3D32f,Emgu.CV.Structure.MCvPoint3D32f,System.Single)">
+            <summary>
+                Gets the resultant position of this point after rotating it around the Z-axis using the specified
+                <paramref name="origin" /> and <paramref name="angle" />.
+            </summary>
+            <param name="self">The current point.</param>
+            <param name="origin">The origin.</param>
+            <param name="angle">The angle in degrees.</param>
+            <returns>The resultant position.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.ToEuler(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Gets the Euler angles from this rotation matrix.
+            </summary>
+            <param name="self">The current 3 x 3 rotation matrix.</param>
+            <returns>Point3D angles.</returns>
+            <exception cref="T:System.ArgumentException">The current matrix is not a 3 x 3 matrix.;self</exception>
+            <exception cref="T:System.ArgumentException">The current matrix is not a 3 x 3 matrix.;self</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">rot;Rotation matrix must have 3x3 dimension.</exception>
+            <remarks>Based on "Point3D Angle Conversion" by Ken Shoemake, in "Graphics Gems IV", Academic Press, 1994.</remarks>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.XRotationMatrix(System.Double)">
+            <summary>
+                Creates an X rotation matrix.
+            </summary>
+            <param name="degrees">The angle about the X axis in degrees.</param>
+            <returns>3x3 rotation matrix.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.YRotationMatrix(System.Double)">
+            <summary>
+                Creates a Y rotation matrix.
+            </summary>
+            <param name="degrees">The angle about the Y axis in degrees.</param>
+            <returns>3x3 rotation matrix.</returns>
+        </member>
+        <member name="M:EmguEx.Geometry.Rotation3D.ZRotationMatrix(System.Double)">
+            <summary>
+                Creates a Z rotation matrix.
+            </summary>
+            <param name="degrees">The angle about the Z axis in degrees.</param>
+            <returns>3x3 rotation matrix.</returns>
+        </member>
+        <member name="T:EmguEx.ImageExt">
+            <summary>
+            Extension methods for <see cref="T:Emgu.CV.Image`2" />.
+            </summary>
+        </member>
+        <member name="T:EmguEx.ImageExt.ConversionScale">
+            <summary>
+            Scaling method for floating-point conversion.
+            </summary>
+        </member>
+        <member name="F:EmguEx.ImageExt.ConversionScale.Default">
+            <summary>
+            Scale from the minimum and maximum values.
+            </summary>
+        </member>
+        <member name="F:EmguEx.ImageExt.ConversionScale.NoScaling">
+            <summary>
+            No scaling; crop negative values and values greater than 255.
+            </summary>
+        </member>
+        <member name="M:EmguEx.ImageExt.Clamp(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Single},System.Single,System.Single)">
+            <summary>
+            Clamps the image values within the specified range.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="minimum">The minimum value.</param>
+            <param name="maximum">The maximum value.</param>
+        </member>
+        <member name="M:EmguEx.ImageExt.DrawCircle(System.Drawing.PointF,System.Single,System.Drawing.Graphics,System.Drawing.Pen)">
+            <summary>
+            Draws the circle.
+            </summary>
+            <param name="centre">The centre.</param>
+            <param name="radius">The radius.</param>
+            <param name="g">The graphics object to draw on.</param>
+            <param name="pen">The pen.</param>
+        </member>
+        <member name="M:EmguEx.ImageExt.DrawCrosshair(System.Drawing.PointF,System.Single,System.Drawing.Graphics,System.Drawing.Pen)">
+            <summary>
+            Draws the cross-hair.
+            </summary>
+            <param name="centre">The centre.</param>
+            <param name="radius">The radius.</param>
+            <param name="g">The graphics object to draw on.</param>
+            <param name="pen">The pen.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ErasePoly(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},System.Drawing.Point[])">
+            <summary>
+            Erases the blobs inside the specified polygon.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="polygon">The polygon.</param>
+        </member>
+        <member name="M:EmguEx.ImageExt.FillPoly(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},System.Byte,System.Drawing.Point[])">
+            <summary>
+            Fills the polygon.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="brushLevel">The greyscale level of the brush to use.</param>
+            <param name="polygon">The polygon.</param>
+        </member>
+        <member name="M:EmguEx.ImageExt.FillPoly(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},System.Drawing.Point[])">
+            <summary>
+            Fills the polygon.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="polygon">The polygon.</param>
+        </member>
+        <member name="M:EmguEx.ImageExt.FillPoly(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Byte},System.Drawing.PointF[])">
+            <summary>
+            Fills the polygon.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="polygon">The polygon.</param>
+        </member>
+        <member name="M:EmguEx.ImageExt.IsOutOfBounds``2(Emgu.CV.Image{``0,``1},System.Drawing.Rectangle)">
+            <summary>
+            Determines whether the specified ROI is out-of-bounds.
+            </summary>
+            <typeparam name="TColor">The type of the color.</typeparam>
+            <typeparam name="TDepth">The type of the depth.</typeparam>
+            <param name="image">The image whose bounds is used.</param>
+            <param name="roi">The ROI to test.</param>
+            <returns><c>true</c> if the specified roi is out-of-bounds; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.IsOutOfBounds``2(Emgu.CV.Image{``0,``1},System.Drawing.Point)">
+            <summary>
+            Determines whether the specified point is out-of-bounds.
+            </summary>
+            <typeparam name="TColor">The type of the color.</typeparam>
+            <typeparam name="TDepth">The type of the depth.</typeparam>
+            <param name="image">The image whose bounds is used.</param>
+            <param name="point">The point to test.</param>
+            <returns><c>true</c> if the specified roi is out-of-bounds; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.Merge``1(Emgu.CV.Image{Emgu.CV.Structure.Gray,``0},Emgu.CV.Image{Emgu.CV.Structure.Gray,``0},Emgu.CV.Image{Emgu.CV.Structure.Gray,``0})">
+            <summary>
+            Merge different colour channels into an image.
+            </summary>
+            <typeparam name="TDepth">Image depth.</typeparam>
+            <param name="blue">Blue channel.</param>
+            <param name="green">Green channel.</param>
+            <param name="red">Red channel.</param>
+            <returns>The merged image.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ToByte(Emgu.CV.Image{Emgu.CV.Structure.Bgr,System.Single},EmguEx.ImageExt.ConversionScale)">
+            <summary>
+            Convert color image from floating-point to byte depth. Negative pixel values are converted to zeroes.
+            </summary>
+            <param name="imgIn">Image to convert.</param>
+            <param name="scaleMethod">Scaling method for conversion.</param>
+            <returns>The converted image.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ToByte(Emgu.CV.Image{Emgu.CV.Structure.Gray,System.Single},EmguEx.ImageExt.ConversionScale)">
+            <summary>
+            Convert grayscale image from floating-point to byte depth. Negative pixel values are converted to zeroes.
+            </summary>
+            <param name="imgIn">Image to convert.</param>
+            <param name="scaleMethod">Scaling method for conversion.</param>
+            <returns>The converted image.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ToEmguCvImage``2(System.Drawing.Bitmap)">
+            <summary>
+            Convert to EmguCV image.
+            </summary>
+            <param name="bmp">This bitmap.</param>
+            <returns>The EmguCV image.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ToFloat``1(Emgu.CV.Image{``0,System.Byte})">
+            <summary>
+            Convert image from byte to floating-point depth.
+            </summary>
+            <param name="imgIn">Image to convert.</param>
+            <returns>The converted image.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ToMat(System.Drawing.Bitmap)">
+            <summary>
+            Converts to a matrix.
+            </summary>
+            <param name="bmp">This bitmap.</param>
+            <returns>The matrix.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExt.ToPngData``1(Emgu.CV.Image{``0,System.Byte},System.Int32)">
+            <summary>
+            Converts this image to PNG data bytes.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="compression">The PNG compression level from 0 to 9. A higher value means a smaller size and longer compression time. Default value is 3.</param>
+            <returns>The PNG byte array.</returns>
+        </member>
+        <member name="T:EmguEx.ImageExtGpu">
+            <summary>
+            Extension methods for <see cref="T:Emgu.CV.Cuda.CudaImage`2" />.
+            </summary>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.Cmp``2(Emgu.CV.Cuda.CudaImage{``0,``1},Emgu.CV.Cuda.CudaImage{``0,``1},Emgu.CV.CvEnum.CmpType)">
+            <summary>
+            Compares elements of two GpuMats. Supports CV_8UC4, CV_32FC1 types.
+            </summary>
+            <typeparam name="TColor">Colour format of image.</typeparam>
+            <typeparam name="TDepth">The pixel depth.</typeparam>
+            <param name="image">This image.</param>
+            <param name="toCmp">Image to compare with.</param>
+            <param name="cmpOp">The type of comparison.</param>
+            <returns>The result of the comparison.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.ConvertScale``2(Emgu.CV.Cuda.CudaImage{``0,``1},Emgu.CV.CvEnum.DepthType,System.Double,System.Double)">
+            <summary>
+            This function has several different purposes and thus has several synonyms. It copies one GpuMat to another with optional scaling, which is performed first,
+            and/or optional type conversion, performed after: dst(I)=src(I)*scale + (shift,shift,...) All the channels of multi-channel GpuMats are processed
+            independently. The type conversion is done with rounding and saturation, that is if a result of scaling + conversion can not be represented exactly by a value
+            of destination GpuMat element type, it is set to the nearest representable value on the real axis. In case of scale=1, shift=0 no prescaling is done. This is a
+            specially optimized case and it has the appropriate convertTo synonym.
+            </summary>
+            <typeparam name="TColor">Image colour format.</typeparam>
+            <typeparam name="TDepth">Depth of image pixels.</typeparam>
+            <param name="image">This image.</param>
+            <param name="depth">Destination depth.</param>
+            <param name="scale">Scale factor.</param>
+            <param name="shift">Value added to the scaled source.</param>
+            <returns>Destination buffer.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.GetAverage(Emgu.CV.Cuda.GpuMat,Emgu.CV.Cuda.GpuMat)">
+            <summary>
+            Gets the average value of image.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="mask">Optional mask.</param>
+            <returns>Average pixel value.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.SmoothBlur``1(Emgu.CV.Cuda.CudaImage{Emgu.CV.Structure.Gray,``0},System.Int32,System.Int32)">
+            <summary>
+            Summation over a pixel width x height neighborhood.
+            </summary>
+            <typeparam name="TDepth">Depth of image pixels.</typeparam>
+            <param name="image">This image.</param>
+            <param name="width">Kernel width.</param>
+            <param name="height">Kernel height.</param>
+            <returns>The result of the blur.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.SmoothBlur(Emgu.CV.Cuda.CudaImage{Emgu.CV.Structure.Bgr,System.Byte},System.Int32,System.Int32)">
+            <summary>
+            Summation over a pixel width x height neighborhood.
+            </summary>
+            <param name="image">This image.</param>
+            <param name="width">Kernel width.</param>
+            <param name="height">Kernel height.</param>
+            <returns>The result of the blur.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.Sub``2(Emgu.CV.Cuda.CudaImage{``0,``1},Emgu.CV.Cuda.CudaImage{``0,``1})">
+            <summary>
+            Subtracts one matrix from another (c = a - b).
+            </summary>
+            <typeparam name="TColor">Colour format of image.</typeparam>
+            <typeparam name="TDepth">The pixel depth.</typeparam>
+            <param name="image">This image.</param>
+            <param name="toSub">image to subtract with.</param>
+            <returns>The result of subtraction.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.ToByte``1(Emgu.CV.Cuda.CudaImage{``0,System.Single})">
+            <summary>
+            Convert image from floating-point to byte depth. Negative pixel values are converted to zeroes.
+            </summary>
+            <typeparam name="TColor">Colour format of image.</typeparam>
+            <param name="imgIn">Image to convert.</param>
+            <returns>The converted image.</returns>
+        </member>
+        <member name="M:EmguEx.ImageExtGpu.ToFloat``1(Emgu.CV.Cuda.CudaImage{``0,System.Byte})">
+            <summary>
+            Convert image from byte to floating-point depth.
+            </summary>
+            <typeparam name="TColor">Colour format of image.</typeparam>
+            <param name="imgIn">Image to convert.</param>
+            <returns>The converted image.</returns>
+        </member>
+        <member name="T:EmguEx.PerfTest">
+            <summary>
+            Implements performance test methods.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="M:EmguEx.PerfTest.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmguEx.PerfTest" /> class.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="P:EmguEx.PerfTest.TimeTaken">
+            <summary>
+            Gets the time taken in seconds.
+            </summary>
+        </member>
+        <member name="M:EmguEx.PerfTest.Dispose">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.CanBeNullAttribute">
+            <summary>
+            Indicates that the value of the marked element could be <c>null</c> sometimes,
+            so the check for <c>null</c> is necessary before its usage.
+            </summary>
+            <example><code>
+            [CanBeNull] object Test() => null;
+            
+            void UseTest() {
+              var p = Test();
+              var s = p.ToString(); // Warning: Possible 'System.NullReferenceException'
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.NotNullAttribute">
+            <summary>
+            Indicates that the value of the marked element could never be <c>null</c>.
+            </summary>
+            <example><code>
+            [NotNull] object Foo() {
+              return null; // Warning: Possible 'null' assignment
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.ItemNotNullAttribute">
+            <summary>
+            Can be appplied to symbols of types derived from IEnumerable as well as to symbols of Task
+            and Lazy classes to indicate that the value of a collection item, of the Task.Result property
+            or of the Lazy.Value property can never be null.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.ItemCanBeNullAttribute">
+            <summary>
+            Can be appplied to symbols of types derived from IEnumerable as well as to symbols of Task
+            and Lazy classes to indicate that the value of a collection item, of the Task.Result property
+            or of the Lazy.Value property can be null.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.StringFormatMethodAttribute">
+            <summary>
+            Indicates that the marked method builds string by format pattern and (optional) arguments.
+            Parameter, which contains format string, should be given in constructor. The format string
+            should be in <see cref="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])"/>-like form.
+            </summary>
+            <example><code>
+            [StringFormatMethod("message")]
+            void ShowError(string message, params object[] args) { /* do something */ }
+            
+            void Foo() {
+              ShowError("Failed: {0}"); // Warning: Non-existing argument in format string
+            }
+            </code></example>
+        </member>
+        <member name="M:EmguEx.Properties.StringFormatMethodAttribute.#ctor(System.String)">
+            <param name="formatParameterName">
+            Specifies which parameter of an annotated method should be treated as format-string
+            </param>
+        </member>
+        <member name="T:EmguEx.Properties.ValueProviderAttribute">
+            <summary>
+            For a parameter that is expected to be one of the limited set of values.
+            Specify fields of which type should be used as values for this parameter.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.InvokerParameterNameAttribute">
+            <summary>
+            Indicates that the function argument should be string literal and match one
+            of the parameters of the caller function. For example, ReSharper annotates
+            the parameter of <see cref="T:System.ArgumentNullException"/>.
+            </summary>
+            <example><code>
+            void Foo(string param) {
+              if (param == null)
+                throw new ArgumentNullException("par"); // Warning: Cannot resolve symbol
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.NotifyPropertyChangedInvocatorAttribute">
+             <summary>
+             Indicates that the method is contained in a type that implements
+             <c>System.ComponentModel.INotifyPropertyChanged</c> interface and this method
+             is used to notify that some property value changed.
+             </summary>
+             <remarks>
+             The method should be non-static and conform to one of the supported signatures:
+             <list>
+             <item><c>NotifyChanged(string)</c></item>
+             <item><c>NotifyChanged(params string[])</c></item>
+             <item><c>NotifyChanged{T}(Expression{Func{T}})</c></item>
+             <item><c>NotifyChanged{T,U}(Expression{Func{T,U}})</c></item>
+             <item><c>SetProperty{T}(ref T, T, string)</c></item>
+             </list>
+             </remarks>
+             <example><code>
+             public class Foo : INotifyPropertyChanged {
+               public event PropertyChangedEventHandler PropertyChanged;
+             
+               [NotifyPropertyChangedInvocator]
+               protected virtual void NotifyChanged(string propertyName) { ... }
+            
+               string _name;
+             
+               public string Name {
+                 get { return _name; }
+                 set { _name = value; NotifyChanged("LastName"); /* Warning */ }
+               }
+             }
+             </code>
+             Examples of generated notifications:
+             <list>
+             <item><c>NotifyChanged("Property")</c></item>
+             <item><c>NotifyChanged(() =&gt; Property)</c></item>
+             <item><c>NotifyChanged((VM x) =&gt; x.Property)</c></item>
+             <item><c>SetProperty(ref myField, value, "Property")</c></item>
+             </list>
+             </example>
+        </member>
+        <member name="T:EmguEx.Properties.ContractAnnotationAttribute">
+            <summary>
+            Describes dependency between method input and output.
+            </summary>
+            <syntax>
+            <p>Function Definition Table syntax:</p>
+            <list>
+            <item>FDT      ::= FDTRow [;FDTRow]*</item>
+            <item>FDTRow   ::= Input =&gt; Output | Output &lt;= Input</item>
+            <item>Input    ::= ParameterName: Value [, Input]*</item>
+            <item>Output   ::= [ParameterName: Value]* {halt|stop|void|nothing|Value}</item>
+            <item>Value    ::= true | false | null | notnull | canbenull</item>
+            </list>
+            If method has single input parameter, it's name could be omitted.<br/>
+            Using <c>halt</c> (or <c>void</c>/<c>nothing</c>, which is the same) for method output
+            means that the methos doesn't return normally (throws or terminates the process).<br/>
+            Value <c>canbenull</c> is only applicable for output parameters.<br/>
+            You can use multiple <c>[ContractAnnotation]</c> for each FDT row, or use single attribute
+            with rows separated by semicolon. There is no notion of order rows, all rows are checked
+            for applicability and applied per each program state tracked by R# analysis.<br/>
+            </syntax>
+            <examples><list>
+            <item><code>
+            [ContractAnnotation("=&gt; halt")]
+            public void TerminationMethod()
+            </code></item>
+            <item><code>
+            [ContractAnnotation("halt &lt;= condition: false")]
+            public void Assert(bool condition, string text) // regular assertion method
+            </code></item>
+            <item><code>
+            [ContractAnnotation("s:null =&gt; true")]
+            public bool IsNullOrEmpty(string s) // string.IsNullOrEmpty()
+            </code></item>
+            <item><code>
+            // A method that returns null if the parameter is null,
+            // and not null if the parameter is not null
+            [ContractAnnotation("null =&gt; null; notnull =&gt; notnull")]
+            public object Transform(object data) 
+            </code></item>
+            <item><code>
+            [ContractAnnotation("=&gt; true, result: notnull; =&gt; false, result: null")]
+            public bool TryParse(string s, out Person result)
+            </code></item>
+            </list></examples>
+        </member>
+        <member name="T:EmguEx.Properties.LocalizationRequiredAttribute">
+            <summary>
+            Indicates that marked element should be localized or not.
+            </summary>
+            <example><code>
+            [LocalizationRequiredAttribute(true)]
+            class Foo {
+              string str = "my string"; // Warning: Localizable string
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.CannotApplyEqualityOperatorAttribute">
+            <summary>
+            Indicates that the value of the marked type (or its derivatives)
+            cannot be compared using '==' or '!=' operators and <c>Equals()</c>
+            should be used instead. However, using '==' or '!=' for comparison
+            with <c>null</c> is always permitted.
+            </summary>
+            <example><code>
+            [CannotApplyEqualityOperator]
+            class NoEquality { }
+            
+            class UsesNoEquality {
+              void Test() {
+                var ca1 = new NoEquality();
+                var ca2 = new NoEquality();
+                if (ca1 != null) { // OK
+                  bool condition = ca1 == ca2; // Warning
+                }
+              }
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.BaseTypeRequiredAttribute">
+            <summary>
+            When applied to a target attribute, specifies a requirement for any type marked
+            with the target attribute to implement or inherit specific type or types.
+            </summary>
+            <example><code>
+            [BaseTypeRequired(typeof(IComponent)] // Specify requirement
+            class ComponentAttribute : Attribute { }
+            
+            [Component] // ComponentAttribute requires implementing IComponent interface
+            class MyComponent : IComponent { }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.UsedImplicitlyAttribute">
+            <summary>
+            Indicates that the marked symbol is used implicitly (e.g. via reflection, in external library),
+            so this symbol will not be marked as unused (as well as by other usage inspections).
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.MeansImplicitUseAttribute">
+            <summary>
+            Should be used on attributes and causes ReSharper to not mark symbols marked with such attributes
+            as unused (as well as by other usage inspections)
+            </summary>
+        </member>
+        <member name="F:EmguEx.Properties.ImplicitUseKindFlags.Access">
+            <summary>Only entity marked with attribute considered used.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.ImplicitUseKindFlags.Assign">
+            <summary>Indicates implicit assignment to a member.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature">
+            <summary>
+            Indicates implicit instantiation of a type with fixed constructor signature.
+            That means any unused constructor parameters won't be reported as such.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Properties.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature">
+            <summary>Indicates implicit instantiation of a type.</summary>
+        </member>
+        <member name="T:EmguEx.Properties.ImplicitUseTargetFlags">
+            <summary>
+            Specify what is considered used implicitly when marked
+            with <see cref="T:EmguEx.Properties.MeansImplicitUseAttribute"/> or <see cref="T:EmguEx.Properties.UsedImplicitlyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Properties.ImplicitUseTargetFlags.Members">
+            <summary>Members of entity marked with attribute are considered used.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.ImplicitUseTargetFlags.WithMembers">
+            <summary>Entity marked with attribute and all its members considered used.</summary>
+        </member>
+        <member name="T:EmguEx.Properties.PublicAPIAttribute">
+            <summary>
+            This attribute is intended to mark publicly available API
+            which should not be removed and so is treated as used.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.InstantHandleAttribute">
+            <summary>
+            Tells code analysis engine if the parameter is completely handled when the invoked method is on stack.
+            If the parameter is a delegate, indicates that delegate is executed while the method is executed.
+            If the parameter is an enumerable, indicates that it is enumerated while the method is executed.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.PureAttribute">
+            <summary>
+            Indicates that a method does not make any observable state changes.
+            The same as <c>System.Diagnostics.Contracts.PureAttribute</c>.
+            </summary>
+            <example><code>
+            [Pure] int Multiply(int x, int y) => x * y;
+            
+            void M() {
+              Multiply(123, 42); // Waring: Return value of pure method is not used
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.MustUseReturnValueAttribute">
+            <summary>
+            Indicates that the return value of method invocation must be used.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.ProvidesContextAttribute">
+            <summary>
+            Indicates the type member or parameter of some type, that should be used instead of all other ways
+            to get the value that type. This annotation is useful when you have some "context" value evaluated
+            and stored somewhere, meaning that all other ways to get this value must be consolidated with existing one.
+            </summary>
+            <example><code>
+            class Foo {
+              [ProvidesContext] IBarService _barService = ...;
+            
+              void ProcessNode(INode node) {
+                DoSomething(node, node.GetGlobalServices().Bar);
+                //              ^ Warning: use value of '_barService' field
+              }
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.PathReferenceAttribute">
+            <summary>
+            Indicates that a parameter is a path to a file or a folder within a web project.
+            Path can be relative or absolute, starting from web root (~).
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.SourceTemplateAttribute">
+            <summary>
+            An extension method marked with this attribute is processed by ReSharper code completion
+            as a 'Source Template'. When extension method is completed over some expression, it's source code
+            is automatically expanded like a template at call site.
+            </summary>
+            <remarks>
+            Template method body can contain valid source code and/or special comments starting with '$'.
+            Text inside these comments is added as source code when the template is applied. Template parameters
+            can be used either as additional method parameters or as identifiers wrapped in two '$' signs.
+            Use the <see cref="T:EmguEx.Properties.MacroAttribute"/> attribute to specify macros for parameters.
+            </remarks>
+            <example>
+            In this example, the 'forEach' method is a source template available over all values
+            of enumerable types, producing ordinary C# 'foreach' statement and placing caret inside block:
+            <code>
+            [SourceTemplate]
+            public static void forEach&lt;T&gt;(this IEnumerable&lt;T&gt; xs) {
+              foreach (var x in xs) {
+                 //$ $END$
+              }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="T:EmguEx.Properties.MacroAttribute">
+            <summary>
+            Allows specifying a macro for a parameter of a <see cref="T:EmguEx.Properties.SourceTemplateAttribute">source template</see>.
+            </summary>
+            <remarks>
+            You can apply the attribute on the whole method or on any of its additional parameters. The macro expression
+            is defined in the <see cref="P:EmguEx.Properties.MacroAttribute.Expression"/> property. When applied on a method, the target
+            template parameter is defined in the <see cref="P:EmguEx.Properties.MacroAttribute.Target"/> property. To apply the macro silently
+            for the parameter, set the <see cref="P:EmguEx.Properties.MacroAttribute.Editable"/> property value = -1.
+            </remarks>
+            <example>
+            Applying the attribute on a source template method:
+            <code>
+            [SourceTemplate, Macro(Target = "item", Expression = "suggestVariableName()")]
+            public static void forEach&lt;T&gt;(this IEnumerable&lt;T&gt; collection) {
+              foreach (var item in collection) {
+                //$ $END$
+              }
+            }
+            </code>
+            Applying the attribute on a template method parameter:
+            <code>
+            [SourceTemplate]
+            public static void something(this Entity x, [Macro(Expression = "guid()", Editable = -1)] string newguid) {
+              /*$ var $x$Id = "$newguid$" + x.ToString();
+              x.DoSomething($x$Id); */
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:EmguEx.Properties.MacroAttribute.Expression">
+            <summary>
+            Allows specifying a macro that will be executed for a <see cref="T:EmguEx.Properties.SourceTemplateAttribute">source template</see>
+            parameter when the template is expanded.
+            </summary>
+        </member>
+        <member name="P:EmguEx.Properties.MacroAttribute.Editable">
+            <summary>
+            Allows specifying which occurrence of the target parameter becomes editable when the template is deployed.
+            </summary>
+            <remarks>
+            If the target parameter is used several times in the template, only one occurrence becomes editable;
+            other occurrences are changed synchronously. To specify the zero-based index of the editable occurrence,
+            use values >= 0. To make the parameter non-editable when the template is expanded, use -1.
+            </remarks>>
+        </member>
+        <member name="P:EmguEx.Properties.MacroAttribute.Target">
+            <summary>
+            Identifies the target parameter of a <see cref="T:EmguEx.Properties.SourceTemplateAttribute">source template</see> if the
+            <see cref="T:EmguEx.Properties.MacroAttribute"/> is applied on a template method.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcActionAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC action. If applied to a method, the MVC action name is calculated
+            implicitly from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcAreaAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC area.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcControllerAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter is
+            an MVC controller. If applied to a method, the MVC controller name is calculated
+            implicitly from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcMasterAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC Master. Use this attribute
+            for custom wrappers similar to <c>System.Web.Mvc.Controller.View(String, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcModelTypeAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC model type. Use this attribute
+            for custom wrappers similar to <c>System.Web.Mvc.Controller.View(String, Object)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcPartialViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter is an MVC
+            partial view. If applied to a method, the MVC partial view name is calculated implicitly
+            from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcSuppressViewErrorAttribute">
+            <summary>
+            ASP.NET MVC attribute. Allows disabling inspections for MVC views within a class or a method.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcDisplayTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC display template.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.Mvc.Html.DisplayExtensions.DisplayForModel(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcEditorTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC editor template.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.EditorExtensions.EditorForModel(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC template.
+            Use this attribute for custom wrappers similar to
+            <c>System.ComponentModel.DataAnnotations.UIHintAttribute(System.String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view component. If applied to a method, the MVC view name is calculated implicitly
+            from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Controller.View(Object)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcViewComponentAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view component name.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcViewComponentViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view component view. If applied to a method, the MVC view component view name is default.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AspMvcActionSelectorAttribute">
+            <summary>
+            ASP.NET MVC attribute. When applied to a parameter of an attribute,
+            indicates that this parameter is an MVC action name.
+            </summary>
+            <example><code>
+            [ActionName("Foo")]
+            public ActionResult Login(string returnUrl) {
+              ViewBag.ReturnUrl = Url.Action("Foo"); // OK
+              return RedirectToAction("Bar"); // Error: Cannot resolve action
+            }
+            </code></example>
+        </member>
+        <member name="T:EmguEx.Properties.RazorSectionAttribute">
+            <summary>
+            Razor attribute. Indicates that a parameter or a method is a Razor section.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.WebPages.WebPageBase.RenderSection(String)</c>.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.CollectionAccessAttribute">
+            <summary>
+            Indicates how method, constructor invocation or property access
+            over collection type affects content of the collection.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Properties.CollectionAccessType.None">
+            <summary>Method does not use or modify content of the collection.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.CollectionAccessType.Read">
+            <summary>Method only reads content of the collection but does not modify it.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.CollectionAccessType.ModifyExistingContent">
+            <summary>Method can change content of the collection but does not add new elements.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.CollectionAccessType.UpdatedContent">
+            <summary>Method can add new elements to the collection.</summary>
+        </member>
+        <member name="T:EmguEx.Properties.AssertionMethodAttribute">
+            <summary>
+            Indicates that the marked method is assertion method, i.e. it halts control flow if
+            one of the conditions is satisfied. To set the condition, mark one of the parameters with 
+            <see cref="T:EmguEx.Properties.AssertionConditionAttribute"/> attribute.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AssertionConditionAttribute">
+            <summary>
+            Indicates the condition parameter of the assertion method. The method itself should be
+            marked by <see cref="T:EmguEx.Properties.AssertionMethodAttribute"/> attribute. The mandatory argument of
+            the attribute is the assertion type.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.AssertionConditionType">
+            <summary>
+            Specifies assertion type. If the assertion method argument satisfies the condition,
+            then the execution continues. Otherwise, execution is assumed to be halted.
+            </summary>
+        </member>
+        <member name="F:EmguEx.Properties.AssertionConditionType.IS_TRUE">
+            <summary>Marked parameter should be evaluated to true.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.AssertionConditionType.IS_FALSE">
+            <summary>Marked parameter should be evaluated to false.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.AssertionConditionType.IS_NULL">
+            <summary>Marked parameter should be evaluated to null value.</summary>
+        </member>
+        <member name="F:EmguEx.Properties.AssertionConditionType.IS_NOT_NULL">
+            <summary>Marked parameter should be evaluated to not null value.</summary>
+        </member>
+        <member name="T:EmguEx.Properties.TerminatesProgramAttribute">
+            <summary>
+            Indicates that the marked method unconditionally terminates control flow execution.
+            For example, it could unconditionally throw exception.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.LinqTunnelAttribute">
+            <summary>
+            Indicates that method is pure LINQ method, with postponed enumeration (like Enumerable.Select,
+            .Where). This annotation allows inference of [InstantHandle] annotation for parameters
+            of delegate type by analyzing LINQ method chains.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.NoEnumerationAttribute">
+            <summary>
+            Indicates that IEnumerable, passed as parameter, is not enumerated.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.RegexPatternAttribute">
+            <summary>
+            Indicates that parameter is regular expression pattern.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.NoReorderAttribute">
+            <summary>
+            Prevents the Member Reordering feature from tossing members of the marked class.
+            </summary>
+            <remarks>
+            The attribute must be mentioned in your member reordering patterns
+            </remarks>
+        </member>
+        <member name="T:EmguEx.Properties.XamlItemsControlAttribute">
+            <summary>
+            XAML attribute. Indicates the type that has <c>ItemsSource</c> property and should be treated
+            as <c>ItemsControl</c>-derived type, to enable inner items <c>DataContext</c> type resolve.
+            </summary>
+        </member>
+        <member name="T:EmguEx.Properties.XamlItemBindingOfItemsControlAttribute">
+            <summary>
+            XAML attribute. Indicates the property of some <c>BindingBase</c>-derived type, that
+            is used to bind some item of <c>ItemsControl</c>-derived type. This annotation will
+            enable the <c>DataContext</c> type resolve for XAML bindings for such properties.
+            </summary>
+            <remarks>
+            Property should have the tree ancestor of the <c>ItemsControl</c> type or
+            marked with the <see cref="T:EmguEx.Properties.XamlItemsControlAttribute"/> attribute.
+            </remarks>
+        </member>
+        <member name="T:EmguEx.MatrixEx">
+            <summary>
+                Extension methods for the Matrix class.
+            </summary>
+        </member>
+        <member name="M:EmguEx.MatrixEx.Inv``1(Emgu.CV.Matrix{``0})">
+            <summary>
+                Gets the inverse of this matrix.
+            </summary>
+            <typeparam name="TDepth">The matrix depth.</typeparam>
+            <param name="self">The current square matrix.</param>
+            <returns>Inverse of matrix.</returns>
+            <remarks>Matrix must be square, else a matrix filled with zeros will be returned.</remarks>
+        </member>
+        <member name="M:EmguEx.MatrixEx.IsNanInfinity(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Determine whether this matrix contains NAN or infinity values.
+            </summary>
+            <param name="self">The current matrix.</param>
+            <returns><c>True</c> if this matrix contains NAN or infinity values; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.Pinv``1(Emgu.CV.Matrix{``0})">
+            <summary>
+                Gets the pseudo-inverse of this matrix.
+            </summary>
+            <typeparam name="TDepth">The matrix depth.</typeparam>
+            <param name="self">The current matrix.</param>
+            <returns>Pseudo-inverse of the current matrix.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToHMatrix(System.Drawing.Point[])">
+            <summary>
+                Converts this <see cref="T:System.Drawing.Point" /> array to a homogeneous matrix.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.Point" /> array.</param>
+            <returns>The 3 x N homogeneous matrix where N is the number of points.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToHMatrix(System.Drawing.PointF[])">
+            <summary>
+                Converts this <see cref="T:System.Drawing.PointF" /> array to a homogeneous matrix.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" /> array.</param>
+            <returns>The 3 x N homogeneous matrix where N is the number of points.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToHMatrix(Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+                Converts this <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> array to a homogeneous matrix.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> array.</param>
+            <returns>A 4 x N homogeneous matrix where N is the number of points.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToHVector(Emgu.CV.Structure.MCvPoint3D32f)">
+            <summary>
+                Gets the homogeneous vector representation of this <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.
+            </summary>
+            <param name="self">The current <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" />.</param>
+            <returns>A 4 x 1 homogeneous vector.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToHVector(System.Drawing.Point)">
+            <summary>
+                Converts this <see cref="T:System.Drawing.Point" /> to a vector for homogeneous transformation.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.Point" />.</param>
+            <returns>A 3 x 1 vector that represents the current <see cref="T:System.Drawing.Point" />.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToHVector(System.Drawing.PointF)">
+            <summary>
+                Converts this <see cref="T:System.Drawing.PointF" /> to a vector for homogeneous transformation.
+            </summary>
+            <param name="self">The current <see cref="T:System.Drawing.PointF" />.</param>
+            <returns>A 3 x 1 vector that represents the current point array.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToMArray``1(Emgu.CV.Matrix{``0})">
+            <summary>
+                Converts this matrix to a multidimensional array.
+            </summary>
+            <typeparam name="TDepth">The type of the depth.</typeparam>
+            <param name="self">The current N x M matrix.</param>
+            <returns>An N x M multidimensional array that represents the current matrix.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToMatrix(System.Drawing.PointF[])">
+            <summary>
+                Converts the current <see cref="T:System.Drawing.PointF" /> array to a matrix.
+            </summary>
+            <param name="self">The current N-length <see cref="T:System.Drawing.PointF" /> array.</param>
+            <returns>A 2 x N matrix that represents the current <see cref="T:System.Drawing.PointF" /> array.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToMatrix(Emgu.CV.Structure.MCvPoint3D32f[])">
+            <summary>
+                Converts this <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> array to matrix form.
+            </summary>
+            <param name="self">The current N-length <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> array.</param>
+            <returns>A 3 x N matrix.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToMCvPoint3D32F(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Converts this matrix to <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> coordinates.
+            </summary>
+            <param name="mat">The matrix.</param>
+            <returns><see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> coordinates.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToMCvPoint3D32FArray(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Converts this matrix to a <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> array.
+            </summary>
+            <param name="self">The current 3 x N or 4 x N matrix.</param>
+            <returns>An N-length <see cref="T:Emgu.CV.Structure.MCvPoint3D32f" /> array.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToPoint(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Converts this vector to a <see cref="T:System.Drawing.Point" /> object.
+            </summary>
+            <param name="self">The current 2 x 1 vector.</param>
+            <returns>A <see cref="T:System.Drawing.Point" /> that represents the current vector.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToPointF(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Converts this vector to a <see cref="T:System.Drawing.PointF" /> object.
+            </summary>
+            <param name="self">The current 2 x 1 or 3 x 1 vector.</param>
+            <returns>A <see cref="T:System.Drawing.PointF" /> that represents the current vector.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToPointFArray(Emgu.CV.Matrix{System.Double})">
+            <summary>
+                Converts this matrix to a point array.
+            </summary>
+            <param name="self">The current 2 x N or 3 x N matrix.</param>
+            <returns>A point array that represents the current matrix.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToStr``1(Emgu.CV.Matrix{``0})">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <typeparam name="TDepth">The depth type.</typeparam>
+            <param name="self">The current matrix.</param>
+            <returns>A <see cref="T:System.String" /> that represents the current matrix.</returns>
+        </member>
+        <member name="M:EmguEx.MatrixEx.ToStr``1(Emgu.CV.Matrix{``0},System.String)">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this matrix.
+            </summary>
+            <typeparam name="TDepth">The depth type.</typeparam>
+            <param name="self">The current matrix.</param>
+            <param name="format">The number format.</param>
+            <returns>A <see cref="T:System.String" /> that represents the current matrix.</returns>
+        </member>
+    </members>
+</doc>

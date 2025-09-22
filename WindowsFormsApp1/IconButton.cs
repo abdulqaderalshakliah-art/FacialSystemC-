@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
         public string Text { get; internal set; }
         public Size Size { get; internal set; }
         public Point Location { get; internal set; }
-        public ContentAlignment TextAlign { get; internal set; }
+      //  public ContentAlignment TextAlign { get; internal set; }
         public object IconChar { get; internal set; }
         public int IconSize { get; internal set; }
         public Color IconColor { get; internal set; }
