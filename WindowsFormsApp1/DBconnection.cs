@@ -10,8 +10,9 @@ namespace WindowsFormsApp1
 {
     internal class DBconnection
     {
+        //public string conn = Properties.Settings.Default.ConectionName;
 
-       public string conn = @"Data Source=DESKTOP-POL7I1U\SQLEXPRESS;Initial Catalog=facialSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        public static string conn = @"Data Source=DESKTOP-POL7I1U\SQLEXPRESS;Initial Catalog=facialSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
         internal void Close()
         {

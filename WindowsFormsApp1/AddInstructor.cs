@@ -211,7 +211,7 @@ namespace WindowsFormsApp1
                     Microsoft.Office.Interop.Excel.Workbook excelWorkbook = excelApp.Workbooks.Open(excelFilepath);
                     Microsoft.Office.Interop.Excel.Worksheet excelWorksheet = excelWorkbook.Sheets[1];
 
-                    using (SqlConnection con = new SqlConnection(dbHelper.conn))
+                    using (SqlConnection con = new SqlConnection(DBconnection.conn))
                     {
                         con.Open();
 

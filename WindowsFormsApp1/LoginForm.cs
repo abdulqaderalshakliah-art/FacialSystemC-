@@ -41,8 +41,13 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Please enter both username and password.");
                 return;
             }
+<<<<<<< HEAD
 
             string connectionString = @"Data Source=DESKTOP-POL7I1U\SQLEXPRESS;Initial Catalog=FacialSystem;Integrated Security=True;TrustServerCertificate=True";
+=======
+            
+           string connectionString = @"Data Source=DESKTOP-POL7I1U\SQLEXPRESS;Initial Catalog=facialSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be
 
             string role = GetRole(username, password, connectionString);
 

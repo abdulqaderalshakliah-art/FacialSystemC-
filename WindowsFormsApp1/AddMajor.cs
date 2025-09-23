@@ -26,11 +26,16 @@ namespace WindowsFormsApp1
         {
 
 
+<<<<<<< HEAD
             string sql = "SELECT faculty_id, faculty_name FROM Faculties ORDER BY faculty_name";
             facultyIdMap = new Dictionary<string, int>();
 
             using (SqlConnection conn = new SqlConnection(new DBconnection().conn))
             {
+=======
+                using (SqlConnection conn = new SqlConnection(DBconnection.conn))
+                {
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be
                 conn.Open();
                 using (SqlDataReader reader = new SqlCommand(sql, conn).ExecuteReader())
                 {

@@ -68,6 +68,7 @@ C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFor
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.updateMajor.resources
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddCourse.resources
 C:\Users\yahya\Source\Repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CourseManagment.resources
+<<<<<<< HEAD
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddCourse.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddInstructor.resources
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddUser.resources
@@ -138,3 +139,9 @@ C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\tr\ZedGraph
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\zh-cn\ZedGraph.resources.dll
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\zh-tw\ZedGraph.resources.dll
 C:\Users\lenovo\source\repos\FacialSystem\WindowsFormsApp1\bin\Debug\haarcascade_frontalface_default.xml
+=======
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddInstructor.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddUser.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.InstructorsManagment.resources
+C:\Users\yahya\source\repos\FacialSystemC-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UsersManagment.resources
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be

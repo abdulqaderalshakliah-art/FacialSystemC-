@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Opening Attendance...");
                     break;
                 case "reports":
-                   
+                    ShowReportsManagement();
                     break;
                 case "users_managment":
                     ShowUsersManagement();
@@ -124,6 +124,17 @@ namespace WindowsFormsApp1
             form2.TopLevel = false;
             contentPanel.Controls.Add(form2);
             form2.Show();
+
+        }
+
+        private void ShowReportsManagement()
+        {
+            contentpanel.Controls.Clear();
+
+            var form5 = new ReportsManagement();
+            form5.TopLevel = false;
+            contentpanel.Controls.Add(form5);
+            form5.Show();
 
         }
 

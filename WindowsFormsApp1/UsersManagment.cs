@@ -105,7 +105,7 @@ namespace WindowsFormsApp1
         {
             string searchQuery = txtsearch.Text;
             DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(dbHelper.conn))
+            using (SqlConnection connection = new SqlConnection(DBconnection.conn))
             {
                 connection.Open();
 

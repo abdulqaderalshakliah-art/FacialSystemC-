@@ -126,12 +126,38 @@
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="MimeKit, Version=4.13.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
       <HintPath>..\packages\MimeKit.4.13.0\lib\net47\MimeKit.dll</HintPath>
     </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="RaveMath.NETS, Version=1.0.2.20122, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RaveMath.NETS.1.0.2\lib\netstandard2.0\RaveMath.NETS.dll</HintPath>
+=======
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be
     </Reference>
     <Reference Include="RBush, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c77e27b81f4d0187, processorArchitecture=MSIL">
       <HintPath>..\packages\RBush.Signed.4.0.0\lib\net47\RBush.dll</HintPath>
@@ -206,6 +232,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -283,6 +310,11 @@
     <Compile Include="DeleteMajor.Designer.cs">
       <DependentUpon>DeleteMajor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacialSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FacialSystemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FacultyManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,7 +336,26 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="passwordRecovery.cs">
+=======
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsManagement.Designer.cs">
+      <DependentUpon>ReportsManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP_VIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REP_VIEW.Designer.cs">
+      <DependentUpon>REP_VIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="StudentManagementForm.cs">
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="passwordRecovery.Designer.cs">
@@ -366,6 +417,7 @@
     <EmbeddedResource Include="InstructorsManagment.resx">
       <DependentUpon>InstructorsManagment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InstructorsRep.rdlc" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,8 +434,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="StudentManagement.resx">
       <DependentUpon>StudentManagement.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="ReportsManagement.resx">
+      <DependentUpon>ReportsManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP_VIEW.resx">
+      <DependentUpon>REP_VIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentManagementForm.resx">
+      <DependentUpon>StudentManagementForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be
     </EmbeddedResource>
     <EmbeddedResource Include="updateMajor.resx">
       <DependentUpon>updateMajor.cs</DependentUpon>
@@ -391,6 +455,17 @@
     <EmbeddedResource Include="UsersManagment.resx">
       <DependentUpon>UsersManagment.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="FacialSystemDataSet.xsc">
+      <DependentUpon>FacialSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FacialSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FacialSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FacialSystemDataSet.xss">
+      <DependentUpon>FacialSystemDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -406,8 +481,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="haarcascade_frontalface_default.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+=======
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+>>>>>>> a5651a8bbd54e3dde77e0e1f3f96f6f276b161be
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
