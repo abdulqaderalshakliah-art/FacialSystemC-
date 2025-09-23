@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\attendance form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\attendance form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|C:\\Users\\lenovo\\source\\repos\\FacialSystem\\windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|C:\\Users\\lenovo\\source\\repos\\FacialSystem\\windowsformsapp1\\attendance form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\attendance form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\loadfaculties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\loadfaculties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|C:\\Users\\lenovo\\source\\repos\\FacialSystem\\windowsformsapp1\\attendance form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\attendance form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\addeditstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\addeditstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\deletemajor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\deletemajor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\updatemajor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\updatemajor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\addstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\addstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|c:\\users\\lenovo\\source\\repos\\facialsystem\\windowsformsapp1\\passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1AD496F9-8C40-4CAF-8958-4B47658CF8CC}|WindowsFormsApp1\\FacialSystem.csproj|solutionrelative:windowsformsapp1\\passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,40 +67,127 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Attendance Form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Attendance Form.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Attendance Form.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Attendance Form.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\Attendance Form.cs [Design]",
+              "Title": "loadfaculties.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\loadfaculties.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\loadfaculties.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\loadfaculties.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\loadfaculties.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:53:50.522Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-23T18:35:37.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Attendance Form.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Attendance Form.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Attendance Form.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Attendance Form.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Attendance Form.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Title": "AddEditStudentForm.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\AddEditStudentForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\AddEditStudentForm.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\AddEditStudentForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\AddEditStudentForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:42:53.341Z",
+              "WhenOpened": "2025-09-23T18:35:26.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteMajor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\DeleteMajor.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\DeleteMajor.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\DeleteMajor.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\DeleteMajor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:35:12.716Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "updateMajor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\updateMajor.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\updateMajor.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\updateMajor.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\updateMajor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:34:44.126Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddStudents.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\AddStudents.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\AddStudents.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\AddStudents.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\AddStudents.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:34:15.467Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "passwordRecovery.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\passwordRecovery.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\passwordRecovery.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\passwordRecovery.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\passwordRecovery.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAiwMkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T14:31:58.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "passwordRecovery.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\passwordRecovery.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\passwordRecovery.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\passwordRecovery.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\passwordRecovery.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T14:31:50.699Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\LoginForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\LoginForm.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAQwFMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T13:17:08.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Program.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T13:14:43.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Attendance Form.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Attendance Form.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Attendance Form.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\Attendance Form.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Attendance Form.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAAAqwOMAAAAAAAAAAAAAAA==",
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\FacialSystem\\WindowsFormsApp1\\LoginForm.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:25:21.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T13:07:41.969Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

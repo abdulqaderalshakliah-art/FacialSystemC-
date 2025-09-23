@@ -1,5 +1,7 @@
-﻿using Emgu.CV;
+﻿
+using Emgu.CV;
 using Emgu.CV.Structure;
+using Emgu.CV.UI;
 using System;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -67,24 +69,26 @@ namespace WindowsFormsApp1
 
         private void ProcessFrame(object sender, EventArgs e)
         {
-            
             if (videoCapture != null && imageBox1 != null)
             {
                 frame = new Mat();
                 videoCapture.Retrieve(frame);
+
                 if (!frame.IsEmpty)
                 {
-                    // Convert to grayscale for faster detection
+                    CvInvoke.Flip(frame, frame, Emgu.CV.CvEnum.FlipType.Horizontal);
+
+                    // Convert to grayscale
                     var gray = new Mat();
                     frame.ConvertTo(gray, Emgu.CV.CvEnum.DepthType.Cv8U, 1);
 
                     // Detect faces
                     var faces = faceDetector.DetectMultiScale(
                         gray,
-                        1.1,           // Scale factor
-                        3,             // Min neighbors
-                        new Size(30, 30), // Min size
-                        new Size(200, 200) // Max size
+                        1.1,
+                        3,
+                        new Size(30, 30),
+                        new Size(200, 200)
                     );
 
                     // Draw rectangle around each face
@@ -97,6 +101,8 @@ namespace WindowsFormsApp1
                             2                          // Thickness
                         );
                     }
+
+                    // Update status
                     this.BeginInvoke((Action)(() =>
                     {
                         lblStatus.Text = faces.Length > 0 ? $"Status: {faces.Length} Face(s) Detected" : "Status: No Face";

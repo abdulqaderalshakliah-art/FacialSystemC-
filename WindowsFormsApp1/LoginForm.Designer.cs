@@ -42,7 +42,7 @@
             // 
             this.usernameTextBox.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.usernameTextBox.Location = new System.Drawing.Point(68, 152);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(226, 27);
             this.usernameTextBox.TabIndex = 1;
@@ -57,7 +57,7 @@
             this.mainPanel.Controls.Add(this.usernameTextBox);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.mainPanel.Size = new System.Drawing.Size(370, 447);
@@ -105,7 +105,7 @@
             this.loginButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.loginButton.ForeColor = System.Drawing.Color.White;
             this.loginButton.Location = new System.Drawing.Point(68, 293);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(2);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(225, 32);
             this.loginButton.TabIndex = 3;
@@ -117,7 +117,7 @@
             // 
             this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.passwordTextBox.Location = new System.Drawing.Point(68, 205);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(226, 27);
             this.passwordTextBox.TabIndex = 2;
@@ -130,12 +130,13 @@
             this.ClientSize = new System.Drawing.Size(370, 447);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facial Smart Attendance System - Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
